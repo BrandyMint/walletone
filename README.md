@@ -17,6 +17,7 @@ invalid
 ## Модели:
 
  W1::Order (virtus). Содержит все необходимые поля для генерации платежной формы.
+ W1::Payment (virtus). Уведомление о платеже (используется в PaymentService)
 
 ## ViewHelpers:
 
