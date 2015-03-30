@@ -1,0 +1,10 @@
+HTTP/1.1 200 Found
+Server: nginx
+Date: Fri, 28 Nov 2014 17:51:12 GMT
+Content-Type: text/json; charset=utf-8
+Content-Length: 24
+Connection: keep-alive
+Keep-Alive: timeout=20
+Cache-Control: private
+
+{ "orderState": "done" }
