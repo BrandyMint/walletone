@@ -1,3 +1,5 @@
+# Принимает уведомления об оплате.
+
 module W1
   class PaymentService
     attr_reader :response
