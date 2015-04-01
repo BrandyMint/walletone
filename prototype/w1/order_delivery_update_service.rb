@@ -1,4 +1,7 @@
 # encoding: utf-8
+# Сервис, который дергает API walleotne чтобы узнать состояние заказа
+#
+# W1::OrderDeliveryUpdateService.new(order).update_state
 require 'cgi'
 module W1
   class OrderDeliveryUpdateService
