@@ -1,4 +1,5 @@
 # encoding: utf-8
+# Сервис регистрации мерчанта
 class W1::RegistrationService
   include W1::Requester
   ENDPOINT = 'registration/users'
