@@ -1,3 +1,13 @@
+W1::PaymentService - Принимает уведомления об оплате (вызывается из rack-middleware)
+W1::FormOptions - генератор формы -> Walletone::FormBuilder (Walletone::Payment)
+
+
+## Отложено:
+
+W1::RegistrationService - Сервис регистрации мерчанта
+W1::OrderDeliveryService - Сервис для уведомления walleone о том, что нужно начать доставку
+W1::OrderDeliveryUpdateService - Сервис, который дергает API walleotne чтобы узнать состояние заказа
+
 Модуль для приема оплаты через Walletone
 
 Основные функции:
