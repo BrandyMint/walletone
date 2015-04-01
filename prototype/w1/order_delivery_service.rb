@@ -1,4 +1,6 @@
 # encoding: utf-8
+# Сервис для уведомления walleone о том, что нужно начать доставку
+# W1::OrderDeliveryService.new(order).create
 require 'cgi'
 module W1
   class OrderDeliveryService
