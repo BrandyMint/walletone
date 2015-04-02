@@ -1,7 +1,7 @@
 require 'logger'
 
 require 'walletone/errors'
-require 'walletone/form'
+require 'walletone/form_builder'
 require 'walletone/response_validator'
 
 module Walletone

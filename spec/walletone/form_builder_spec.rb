@@ -1,4 +1,4 @@
-describe Walletone::Form do
+describe Walletone::FormBuilder do
   let(:sample_form) do
     [
       [:wmi_merchant_id,    FFaker.numerify('############').to_i],

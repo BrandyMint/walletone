@@ -4,7 +4,7 @@ require 'digest/md5'
 require 'uri'
 
 module Walletone
-  class Form
+  class FormBuilder
     attr_reader :fields
 
     def initialize(fields = [])
