@@ -12,6 +12,9 @@ module Walletone
   WEB_CHECKOUT_URL = 'https://wl.walletone.com/checkout/checkout/Index'
   API_CHECKOUT_URL = 'https://www.walletone.com/checkout/default.aspx'
 
-  # mattr_accessor :logger
-  # self.logger = Logger.new(STDERR)
+  class << self
+    attr_accessor :logger
+  end
+
+  self.logger = Logger.new(STDERR)
 end
