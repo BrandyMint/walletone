@@ -103,7 +103,7 @@ module Walletone
       if url =~ URI::regexp
         url
       else
-        raise WrongUrlException
+        raise BadUrlError
       end
     end
 
@@ -111,7 +111,7 @@ module Walletone
       if url =~ URI::regexp
         url
       else
-        raise WrongUrlException
+        raise BadUrlError
       end
     end
   end

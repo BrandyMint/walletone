@@ -1,7 +1,8 @@
 require 'logger'
 require 'virtus'
 
-require 'walletone/errors'
+require 'walletone/errors/walletone_error'
+require 'walletone/errors/bad_url_error'
 require 'walletone/payment'
 require 'walletone/form_builder'
 require 'walletone/form'

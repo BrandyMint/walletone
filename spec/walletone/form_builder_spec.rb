@@ -89,13 +89,13 @@ describe Walletone::FormBuilder do
     it 'throws error with invalid wmi_success_url' do
       expect {
         described_class.new(Fabricate(:payment), wmi_success_url: 'wrong_uri')
-      }.to raise_error(Walletone::WrongUrlException)
+      }.to raise_error(Walletone::BadUrlError)
     end
 
     it 'throws error with invalid wmi_fail_url' do
       expect {
         described_class.new(Fabricate(:payment), wmi_fail_url: 'wrong_uri')
-      }.to raise_error(Walletone::WrongUrlException)
+      }.to raise_error(Walletone::BadUrlError)
     end
   end
 end
