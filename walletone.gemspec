@@ -20,7 +20,10 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.test_files = Dir.glob("spec/**/*")
 
+  s.add_dependency 'virtus', '~> 1.0.5'
+
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec', '>= 3.2.0'
+  s.add_development_dependency 'rspec', '~> 3.2.0'
   s.add_development_dependency 'ffaker', '>= 2.0.0'
+  s.add_development_dependency 'fabrication', '~> 2.12.2'
 end
