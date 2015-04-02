@@ -4,6 +4,7 @@ require 'virtus'
 require 'walletone/errors'
 require 'walletone/payment'
 require 'walletone/form_builder'
+require 'walletone/form'
 require 'walletone/response_validator'
 
 module Walletone

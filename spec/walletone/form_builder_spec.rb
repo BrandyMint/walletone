@@ -49,8 +49,9 @@ describe Walletone::FormBuilder do
       }))
       builder.generate_signature('secret')
       form = builder.build
-      expect(form).to include(['WMI_MERCHANT_ID', 127830694690])
-      expect(form).to include(['WMI_CURRENCY_ID', 643])
+      expect(form).to be_a(Walletone::Form)
+      expect(form.fields).to include(['WMI_MERCHANT_ID', 127830694690])
+      expect(form.fields).to include(['WMI_CURRENCY_ID', 643])
     end
   end
 

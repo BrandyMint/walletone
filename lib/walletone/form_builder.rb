@@ -55,9 +55,7 @@ module Walletone
     end
 
     def build
-      @fields.map do |k, v|
-        [k.upcase, v]
-      end
+      Form.new(self)
     end
 
   private
