@@ -22,5 +22,9 @@ module Walletone
 
     # extra fields
     attribute :extra, Array
+
+    def build_form(options = {})
+      FormBuilder.new(self, options).build
+    end
   end
 end
