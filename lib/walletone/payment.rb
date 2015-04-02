@@ -3,12 +3,12 @@ module Walletone
     include Virtus.model
 
     # required
-    attribute :merchant_id,    Integer, required: true
+    attribute :merchant_id,    Integer
     attribute :payment_amount, Float
     attribute :currency_id,    Integer
 
     # optional
-    attribute :payment_no       # any...?
+    attribute :payment_no
     attribute :description,     String
     attribute :expired_date,    Time, default: nil
     attribute :recipient_login, String
