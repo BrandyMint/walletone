@@ -1,3 +1,6 @@
+http://www.walletone.com/ru/merchant/documentation/
+
+
 W1::PaymentService - Принимает уведомления об оплате (вызывается из rack-middleware)
 W1::FormOptions - генератор формы -> Walletone::FormBuilder (Walletone::Payment)
 
