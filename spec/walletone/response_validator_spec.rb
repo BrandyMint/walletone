@@ -1,7 +1,5 @@
 describe Walletone::ResponseValidator do
-  context '.initialize' do
-    it 'add fields' do
-      # ...
-    end
+  context '.new' do
+    pending
   end
 end

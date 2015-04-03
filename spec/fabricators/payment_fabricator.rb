@@ -1,5 +1,5 @@
 Fabricator(:payment, from: 'Walletone::Payment') do
-  merchant_id    { FFaker.numerify('############').to_i }
-  currency_id    { [643, 840, 978].sample }
-  payment_amount { FFaker.numerify('##.##').to_f }
+  WMI_MERCHANT_ID    { FFaker.numerify('############').to_i }
+  WMI_CURRENCY_ID    { [643, 840, 978].sample }
+  WMI_PAYMENT_AMOUNT { FFaker.numerify('##.##').to_f }
 end

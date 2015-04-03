@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir.glob("spec/**/*")
 
   s.add_dependency 'virtus', '~> 1.0.5'
+  s.add_dependency 'rack',   '~> 1.6'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec', '~> 3.2.0'
