@@ -1,5 +1,4 @@
 module Walletone
-  # maybe it should be virtus model?
   class Response
     attr_reader :params
 

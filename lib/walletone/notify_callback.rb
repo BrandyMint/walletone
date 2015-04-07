@@ -2,11 +2,6 @@ require 'rack'
 
 module Walletone
   class NotifyCallback
-    # should we check required fields:
-    #   WMI_SIGNATURE, WMI_PAYMENT_NO, WMI_ORDER_STATE
-    # for existence and automatically respond with RETRY
-    # or allow the gem user to do it?
-    # and I have same question for WMI_SIGNATURE checking
     def call(env)
       request  = Rack::Request.new(env)
       response = Response.new(encode_params(request.params))
@@ -18,7 +13,7 @@ module Walletone
   private
 
     def status
-      200 # maybe 201 or 202?
+      200
     end
 
     def headers
