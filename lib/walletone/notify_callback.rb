@@ -10,7 +10,7 @@ module Walletone
     def call(env)
       request  = Rack::Request.new(env)
       response = Response.new(encode_params(request.params))
-      body     = Walletone.notify_callback.call(response)
+      body     = Walletone.notify_callback.call(response, env)
 
       [status, headers, [body]]
     end

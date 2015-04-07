@@ -8,7 +8,7 @@ describe Walletone::NotifyCallback do
   end
 
   after(:each) do
-    Walletone.notify_callback = lambda { |r| r.retry }
+    Walletone.notify_callback = lambda { |r, env| r.retry }
   end
 
   context 'response' do
@@ -17,7 +17,7 @@ describe Walletone::NotifyCallback do
     end
 
     it 'ok' do
-      Walletone.notify_callback = lambda do |resp|
+      Walletone.notify_callback = lambda do |resp, env|
         resp.ok
       end
 
@@ -26,7 +26,7 @@ describe Walletone::NotifyCallback do
   end
 
   it 'encoding cp1251 to utf8' do
-    Walletone.notify_callback = lambda do |resp|
+    Walletone.notify_callback = lambda do |resp, env|
       expect(resp.param(:cp1251).first).to eq('привет')
       resp.ok
     end

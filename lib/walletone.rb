@@ -23,5 +23,5 @@ module Walletone
   end
 
   self.logger = Logger.new(STDERR)
-  self.notify_callback = lambda { |r| r.retry }
+  self.notify_callback = lambda { |r, env| r.retry }
 end
