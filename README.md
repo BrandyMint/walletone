@@ -29,6 +29,12 @@ mount Walletone::NotifyCallback.new => '/w1_callback'
 
 ---
 
+### Useful links
+
+1. [Walletone Open API](https://api.w1.ru/OpenApi/)
+
+---
+
 ### Contributing
 
 1. Fork it
