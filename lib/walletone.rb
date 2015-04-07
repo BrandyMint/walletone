@@ -22,6 +22,6 @@ module Walletone
     attr_accessor :notify_callback
   end
 
-  self.logger = Logger.new(STDERR)
-  self.notify_callback = lambda { |r| r.retry }
+  self.logger = Logger.new(STDOUT)
+  self.notify_callback = lambda { |r, env| r.retry }
 end
