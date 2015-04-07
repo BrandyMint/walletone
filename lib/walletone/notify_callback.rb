@@ -4,8 +4,14 @@ module Walletone
   class NotifyCallback
     def call(env)
       request  = Rack::Request.new(env)
-      response = Response.new(encode_params(request.params))
-      body     = Walletone.notify_callback.call(response, env)
+      params   = encode_params(request.params)
+      response = Response.new(params)
+
+      log("Prepared params: #{params}")
+      log("#{request.request_method} #{request.query_string}\n" +
+          "#{request.body.read}")
+
+      body = Walletone.notify_callback.call(response, env)
 
       [status, headers, [body]]
     end
@@ -24,6 +30,10 @@ module Walletone
       params.map do |k, v|
         [k, v.force_encoding("cp1251").encode("utf-8", undef: :replace)]
       end
+    end
+
+    def log(message)
+      Walletone.logger.info(message)
     end
   end
 end
