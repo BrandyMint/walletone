@@ -1,80 +1,43 @@
+require 'walletone/fields'
+require 'base64'
+require 'time'
+
+# Поля для формы оплаты формируемые приложением
+#
 module Walletone
-  class Payment
-    include Virtus.model
+  class Payment < Fields
+    RUB_ISO_NUMBER = 643
+    DEFAULT_CURRENTY = RUB_ISO_NUMBER
 
-    attribute :WMI_MERCHANT_ID,    Integer, required: true
-    attribute :WMI_PAYMENT_AMOUNT, Float,   required: true
-    attribute :WMI_CURRENCY_ID,    Integer, required: true
+    def sign!(secret_key, hash_type=Signer::DEFAULT_HASH_TYPE)
+      raise 'Already signed!' if signed?
+      self.WMI_SIGNATURE = signer.signature secret_key, hash_type
 
-    attribute :WMI_PAYMENT_NO
-    attribute :WMI_DESCRIPTION,     String
-    attribute :WMI_EXPIRED_DATE,    Time, default: nil
-    attribute :WMI_RECIPIENT_LOGIN, String
-
-    attribute :WMI_PTENABLED,  Array[String]
-    attribute :WMI_PTDISABLED, Array[String]
-
-    attribute :WMI_CUSTOMER_FIRSTNAME, String
-    attribute :WMI_CUSTOMER_LASTNAME,  String
-    attribute :WMI_CUSTOMER_EMAIL,     String
-
-    attribute :WMI_SUCCESS_URL, String
-    attribute :WMI_FAIL_URL,    String
-
-    attribute :extra, Array
-
-
-    def sign(secret: nil, hash_type: :md5)
-      payment_presenter = PaymentPresenter.new(self)
-
-      fields = format_attributes(payment_presenter)
-      fields << sign_form(fields, secret, hash_type)
-
-      SignedPayment.new(fields)
+      freeze
     end
 
-    def validate!
-      # ...
+    def signed?
+      self.WMI_SIGNATURE.present?
     end
 
-  private
-
-    def format_attributes(presenter)
-      attributes.inject([]) do |acc, kv|
-        name, value = kv
-
-        if value.is_a?(Array)
-          acc + add_array_of_values(name, value)
-        else
-          acc << add_value(presenter, name, value)
-        end
-      end
+    def WMI_CURRENCY_ID
+      super || DEFAULT_CURRENTY
     end
 
-    def sign_form(fields, secret, hash_type)
-      signer = Signer.new(fields, hash_type)
-      ['WMI_SIGNATURE', signer.sign(secret)]
+    def WMI_PAYMENT_AMOUNT
+      value = super
+      "%.2f" % value if value
     end
 
-    # Simply format values and add it
-    def add_value(presenter, name, value)
-      [name.to_s, presenter.send(name)]
+    def WMI_DESCRIPTION
+      value = super
+      "BASE64:#{Base64.encode64(value[0...250])[0..-2]}" if value
     end
 
-    # Adds array of values, like:
-    #   [['foo', 'bar'], ['foo', 'baz']]
-    # or
-    #   ['WMI_PTENABLED', ['WebMoneyRUB', 'WebMoneyUSD']]
-    # as
-    #   ['foo', 'bar'], ['foo', 'baz'], ['WMI_PTENABLED', 'WebMoneyRUB'] ...
-    def add_array_of_values(name, values)
-      values.inject([]) do |acc, piece|
-        if piece.is_a?(Array)
-          acc << piece.map(&:to_s)
-        else
-          acc << [name.to_s, piece.to_s]
-        end
-      end
+    def WMI_EXPIRED_DATE
+      value = super
+      value ? value.iso8601 : value
     end
+
   end
 end

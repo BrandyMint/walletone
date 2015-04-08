@@ -8,10 +8,8 @@ Gem::Specification.new do |s|
   s.authors = ["Danil Pismenny", "Yuri Artemev"]
   s.email = ["danil@brandymint.ru", "i@artemeff.com"]
   s.homepage = "https://github.com/BrandyMint/walletone"
-  # TODO
-  s.summary = %q{}
-  # TODO
-  s.description = %q{}
+  s.summary       = %q{walleton.com Checkout client}
+  s.description   = %q{Клиент для приема оплаты через walletone.com}
   s.licenses = ['MIT']
 
   s.files = %w(README.md LICENSE walletone.gemspec)
@@ -27,4 +25,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3.2.0'
   s.add_development_dependency 'ffaker', '>= 2.0.0'
   s.add_development_dependency 'fabrication', '~> 2.12.2'
+  s.add_development_dependency "pry"
+  s.add_development_dependency "pry-nav"
+  s.add_development_dependency "webmock"
+  s.add_development_dependency "guard"
+  s.add_development_dependency "guard-rspec"
+  s.add_development_dependency 'guard-ctags-bundler'
+  s.add_development_dependency 'yard'
 end

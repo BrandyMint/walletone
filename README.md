@@ -1,36 +1,106 @@
-### walletone
+# walletone checkout client for ruby
+
+[![Build Status](https://travis-ci.org/BrandyMint/walletone.svg)](https://travis-ci.org/BrandyMint/walletone)
+[![Code Climate](https://codeclimate.com/github/BrandyMint/walletone/badges/gpa.svg)](https://codeclimate.com/github/BrandyMint/walletone)
 
 ---
 
-### Usage
 
-Define your callback:
+# Использование
+
+## Прием уведомлений об оплате (rack middleware)
+
+### 1. Создаем rack middleware для приема уведомлений
+
+Сначала определимся как мы будем получать уведомление об оплате.
+
+#### Вариант N1. Через callback
 
 ```ruby
-Walletone.notify_callback = lambda do |response, rack_env|
-  if response.valid?(our_signature, secret, hash_type)
-    # do there what you want with `response.params`
-    response.ok
-  else
-    response.retry('Wrong sign')
-  end
+wm = Walletone::Middleware::Callback.new do |notify, env|
+  # notify is a Walletone::Notification instance
+
+  raise 'Wrong sign' unless notify.valid? W1_SECRET_KEY
+
+  # TODO something with notify
+
+  'Return some message for OK response'
 end
 ```
 
-And mount it in your application:
+#### Вариант N2. Создаем свой класс middleware
+
+```ruby
+class MyApp::WalletoneMiddleware < Waletone::Middleware::Base
+  def perform notify, env
+    raise 'Wrong sign' unless notify.valid? W1_SECRET_KEY
+
+    # TODO something with notify
+    'Return some message for OK response'
+  end
+end
+
+wm = MyApp::WalletoneMiddleware.new
+```
+
+### 2. Подключаем middleware
 
 ```ruby
 # config.ru
-run Walletone::NotifyCallback.new
+run wm
 
 # rails
-mount Walletone::NotifyCallback.new => '/w1_callback'
+mount wm => '/w1_callback'
+```
+
+### 3. Прописываем в walletone получившийся url
+
+Готово. Принимаем уведомления.
+
+## Генерация формы оплаты
+
+### Сначала заполняем необходимые для формы поля
+
+Поля хранятся в объекте типа `Walletone::Payment`, который представляет из 
+себя `Hash` в возможностью прямого доступа к основным полям с префиксом `WMI_`.
+
+Для полей требующих множественное значение (типа WMI_PTENABLED) в качестве
+значений можно передавать массив строк.
+
+```ruby
+payment = Walletone::Payment.new(
+    WMI_MERCHANT_ID:    'Номер вашего ID)',
+    WMI_PAYMENT_AMOUNT:  10000, # Сумма
+    WMI_CURRENCY_ID:     ISO номер валюты (По умолчанию 643 - Рубль),
+    WMI_PTENABLED:      ['WebMoneyRUB', 'WebMoneyUSD'],
+    SOME_CUSTOM_FIELD:  'value'
+    # etc любые другие поля
+)
 ```
 
 
-### Useful links
+### Собственно генераця формы
+
+```haml
+- form = Walletone::Form.new payment
+
+%h5 В течение 5-и секунд вы будете переправлены на страницу оплаты.
+= form_tag form.checkout_url, form.options.merge(data: {autosubmit: true}) do |f|
+  = form.hidden_fields_tags
+  = submit_tag 'Перейти к оплате', 
+    :class=>'btn btn-primary',
+    :data =>{:disable_with => 'Переправляю на сайт оплаты..'}
+
+:coffee
+  # Автоматически сабмитим форму, чтобы не тревожить лишний раз
+  # пользователя
+  $ -> $('[data-autosubmit]').submit()
+```
+
+# Прочие ссылки
 
 1. [Walletone Open API](https://api.w1.ru/OpenApi/)
+2. http://www.walletone.com/ru/merchant/documentation/
 
 ---
 
@@ -42,7 +112,6 @@ mount Walletone::NotifyCallback.new => '/w1_callback'
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 =======
-http://www.walletone.com/ru/merchant/documentation/
 
 
 ## ТЗ

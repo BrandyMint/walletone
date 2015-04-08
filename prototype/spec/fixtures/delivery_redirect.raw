@@ -1,9 +1,0 @@
-HTTP/1.1 200 OK
-Server: nginx/1.6.2
-Date: Wed, 26 Nov 2014 15:27:44 GMT
-Content-Type: application/html
-Content-Length: 194
-Connection: close
-Cache-Control: max-age=0
-Expires: Wed, 26 Nov 2014 15:27:44 GMT
-Strict-Transport-Security: max-age=15552000

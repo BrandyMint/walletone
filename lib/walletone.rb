@@ -3,25 +3,48 @@ require 'virtus'
 
 require 'walletone/errors/walletone_error'
 require 'walletone/errors/bad_url_error'
-require 'walletone/tuple'
 
-require 'walletone/signer'
-require 'walletone/signed_payment'
 require 'walletone/payment'
-require 'walletone/payment_presenter'
-require 'walletone/response'
-require 'walletone/notify_callback'
+require 'walletone/notification'
+require 'walletone/middleware/base'
 
 module Walletone
   API_URL          = 'https://api.w1.ru/OpenApi/'
-  WEB_CHECKOUT_URL = 'https://wl.walletone.com/checkout/checkout/Index'
-  API_CHECKOUT_URL = 'https://www.walletone.com/checkout/default.aspx'
+  V1_CHECKOUT_URL = 'https://www.walletone.com/checkout/default.aspx'
+  V2_CHECKOUT_URL = 'https://wl.walletone.com/checkout/checkout/Index'
 
-  class << self
-    attr_accessor :logger
-    attr_accessor :notify_callback
+  class Configuration
+    include Singletone
+    attr_accessor :logger, :error_notifier, :error_notify_method, :web_checkout_url
+
+    def self.default_logger
+      logger = Logger.new(STDOUT)
+      logger.progname = 'walletone'
+      logger
+    end
+
+    def initialize
+      self.logger = default_logger
+      self.web_checkout_url = V2_CHECKOUT_URL
+      self.error_notify_method = :notify
+      self.error_notifier = Honeybadger if defined? Honeybadger
+      self.error_notifier = Bugsnag if defined? Bugsnag
+    end
   end
 
-  self.logger = Logger.new(STDOUT)
-  self.notify_callback = lambda { |r, env| r.retry }
+  delegate :logger, to: :config
+
+  def self.notify_error error, *args
+    logger.error "Catch error #{error}"
+    return unless config.error_notifier
+    config.error_notifier.send self.config.error_notify_method, error, *args
+  end
+
+  def self.config
+    Configuration.instance
+  end
+
+  def self.configure
+    yield config
+  end
 end
