@@ -1,0 +1,12 @@
+.b-text.b-text_center
+  %h2
+    В течение 5-и секунд вы будете переправлены на страницу оплаты.
+    = form_tag W1::WEB_CHECKOUT_URL, { authenticity_token: false, 
+      enforce_utf8: false, autosubmit: true} do |f|
+      - order_payments_fields.each do |field, value|
+        = hidden_field_tag(field, value)
+
+      = submit_tag 'Перейти к оплате', 
+        :name => nil, 
+        :class=>'b-btn cart-btn-checkout cart__list-actions-btn', 
+        :data =>{:disable_with => 'Переправляю на сайт оплаты'}
