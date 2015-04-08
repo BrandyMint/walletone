@@ -30,6 +30,8 @@ module Walletone
       fields = format_attributes(payment_presenter)
       fields << sign_form(fields, secret, hash_type)
 
+      Walletone.log(:info, "Sign Payment #{fields}")
+
       SignedPayment.new(fields)
     end
 

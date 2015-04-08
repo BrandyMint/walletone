@@ -16,10 +16,15 @@ module Walletone
   API_URL          = 'https://api.w1.ru/OpenApi/'
   WEB_CHECKOUT_URL = 'https://wl.walletone.com/checkout/checkout/Index'
   API_CHECKOUT_URL = 'https://www.walletone.com/checkout/default.aspx'
+  LOGGER_TAG       = 'Walletone'
 
   class << self
     attr_accessor :logger
     attr_accessor :notify_callback
+
+    def log(level, msg)
+      logger.send(level, LOGGER_TAG) { msg }
+    end
   end
 
   self.logger = Logger.new(STDOUT)
