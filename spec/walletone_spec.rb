@@ -9,8 +9,8 @@ describe Walletone do
     let(:error) { StandardError.new }
     it do
       error_notifier = double
-      Walletone.config.error_notifier = error_notifier
-      expect(error_notifier).to receive(:notify) #.with(error)
+      allow(Walletone.config).to receive(:error_notifier).and_return error_notifier
+      expect(error_notifier).to receive(:notify).with(error)
       expect(described_class.logger).to receive(:error)
       described_class.notify_error error
     end
