@@ -16,12 +16,6 @@ module Walletone::Middleware
   class Base
     OK = 'OK'
     RETRY = 'RETRY'
-    include ParamsEncoding
-    delegate :logger, to: Walletone
-
-    def initialize &callback
-      self.callback= callback
-    end
 
     def call(env)
       logger.info 'Middleware start'
@@ -29,7 +23,7 @@ module Walletone::Middleware
       encoded_params = from_cp1251_to_utf8 request.params
 
       logger.info "Middleware parameters is #{encoded_params}"
-      notify = Notification.new encoded_params
+      notify = Walletone::Notification.new encoded_params
 
       logger.info 'Middleware perform'
       ok_message = perform notify, env
@@ -39,12 +33,16 @@ module Walletone::Middleware
       body = make_response OK, ok_message
       [200, {}, [body]]
     rescue => err
-      Walletone.error_notify err
+      Walletone.notify_error err
 
-      [200, {}, [make_response(ERROR, err.message)]]
+      [200, {}, [make_response(RETRY, err.message)]]
     end
 
     private
+
+    def logger
+      Walletone.logger
+    end
 
     def perform notify, env
       raise 'Walletone middleware perform method is not implemented'

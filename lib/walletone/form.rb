@@ -1,15 +1,15 @@
 require 'cgi'
 module Walletone
   class Form
-    include Virsut.model strict: true
-    attribute :fields, Fields, required: true
+    include Virtus.model strict: true, coerce: false
+    attribute :payment, Payment, required: true
 
-    def checkour_url
+    def checkout_url
       Walletone.config.web_checkout_url
     end
 
     def hidden_fields_tags
-      fields.to_list do |field|
+      payment.as_list.map do |field|
         key, value = field
         hidden_field_tag(key, value)
       end.join
@@ -23,7 +23,7 @@ module Walletone
     private
 
     def hidden_field_tag name, value
-      "<input name=\"#{CGI.escapeHTML(name)}\" type=\"hidden\" value=\"#{CGI.escapeHTML(value)}\" />".html_safe
+      "<input name=\"#{CGI.escapeHTML(name.to_s)}\" type=\"hidden\" value=\"#{CGI.escapeHTML(value.to_s)}\" />"
     end
 
   end

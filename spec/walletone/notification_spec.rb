@@ -1,5 +1,8 @@
-describe Walletone::Response do
-  let(:secret) { '623577687055676e43446f6c474f385165356e64556e474e5d7366' }
+require 'walletone/notification'
+
+describe Walletone::Notification do
+  let(:secret)    { '623577687055676e43446f6c474f385165356e64556e474e5d7366' }
+  let(:signature) { '0v/qXN0eonX2+8AuiLLONQ==' }
   let(:raw_params) do
     {
       'WMI_MERCHANT_ID'         => '127696943127',
@@ -20,15 +23,14 @@ describe Walletone::Response do
       'WMI_FAIL_URL'            => 'http://wannabe.kiiiosk.ru/payments/w1/failure',
       'WMI_SUCCESS_URL'         => 'http://wannabe.kiiiosk.ru/payments/w1/success',
       'WMI_UPDATE_DATE'         => '2014-12-16 20:05:51',
-      'WMI_SIGNATURE'           => '0v/qXN0eonX2+8AuiLLONQ=='
+      'WMI_SIGNATURE'           => signature
     }
   end
+  subject { described_class.new(raw_params) }
 
   context '#valid?' do
     it 'compare signatures from request and response' do
-      response = described_class.new(raw_params)
-      is_valid = response.valid?('0v/qXN0eonX2+8AuiLLONQ==', secret)
-      expect(is_valid).to be_truthy
+      expect( subject.valid?(secret) ).to be_truthy
     end
   end
 end

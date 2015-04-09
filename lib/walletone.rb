@@ -14,7 +14,7 @@ module Walletone
   V2_CHECKOUT_URL = 'https://wl.walletone.com/checkout/checkout/Index'
 
   class Configuration
-    include Singletone
+    include ::Singleton
     attr_accessor :logger, :error_notifier, :error_notify_method, :web_checkout_url
 
     def self.default_logger
@@ -24,15 +24,13 @@ module Walletone
     end
 
     def initialize
-      self.logger = default_logger
+      self.logger = self.class.default_logger
       self.web_checkout_url = V2_CHECKOUT_URL
       self.error_notify_method = :notify
       self.error_notifier = Honeybadger if defined? Honeybadger
       self.error_notifier = Bugsnag if defined? Bugsnag
     end
   end
-
-  delegate :logger, to: :config
 
   def self.notify_error error, *args
     logger.error "Catch error #{error}"
@@ -46,5 +44,9 @@ module Walletone
 
   def self.configure
     yield config
+  end
+
+  def self.logger
+    config.logger
   end
 end

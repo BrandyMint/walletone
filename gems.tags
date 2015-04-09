@@ -228,7 +228,6 @@ AnyInstance	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-m
 AnyInstanceAllowanceTarget	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/targets.rb	/^    class AnyInstanceAllowanceTarget < TargetBase$/;"	c	class:RSpec.Mocks
 AnyInstanceExpectationTarget	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/targets.rb	/^    class AnyInstanceExpectationTarget < TargetBase$/;"	c	class:RSpec.Mocks
 Anything	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/test/builder/anything.rb	/^class Anything$/;"	c
-ApiMockBase	/home/vagrant/code/walletone/prototype/spec/support/api_mock_base.rb	/^class ApiMockBase < Sinatra::Base$/;"	c
 AppClass	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/test/spec_builder.rb	/^      class AppClass$/;"	c
 Application	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10.4.2/lib/rake/application.rb	/^  class Application$/;"	c	class:Rake
 Application	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/spec/actions/file_manipulation_spec.rb	/^class Application; end$/;"	c
@@ -361,6 +360,7 @@ Base	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/l
 Base	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/base.rb	/^    class Base$/;"	c	class:YARD.Parser
 Base	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/serializers/base.rb	/^    class Base$/;"	c	class:YARD.Serializers
 Base	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/server/commands/base.rb	/^      class Base$/;"	c	class:YARD.Server.Commands
+Base	/home/vagrant/code/walletone/lib/walletone/middleware/base.rb	/^  class Base$/;"	c	class:Walletone
 Base64	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/session/cookie.rb	/^      class Base64$/;"	c	class:Rack.Session.Cookie
 BaseFormatter	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/formatters/base_formatter.rb	/^      class BaseFormatter$/;"	c	class:RSpec.Core.Formatters
 BaseHashMatcher	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/argument_matchers.rb	/^      class BaseHashMatcher$/;"	c	class:RSpec.Mocks.ArgumentMatchers
@@ -641,6 +641,7 @@ Call	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16
 CallChain	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/call_chain.rb	/^  class CallChain$/;"	c	class:Celluloid
 CallExampleActor	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/spec/celluloid/calls_spec.rb	/^  class CallExampleActor$/;"	c
 CallableReleaser	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/lib/ffi/autopointer.rb	/^    class CallableReleaser < Releaser$/;"	c	class:FFI
+Callback	/home/vagrant/code/walletone/lib/walletone/middleware/callback.rb	/^  class Callback < Base$/;"	c	class:Walletone
 CallbackCustomTypedef	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/spec/ffi/typedef_spec.rb	/^    module CallbackCustomTypedef$/;"	m
 CallbackMember	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/spec/ffi/fixtures/classes.rb	/^  module CallbackMember$/;"	m	class:FFISpecs
 CallbackMember	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/spec/ffi/struct_spec.rb	/^  module CallbackMember$/;"	m
@@ -1361,7 +1362,6 @@ Error	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/notiffany-0.0
 Error	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/utils/okjson.rb	/^  class Error < ::StandardError$/;"	c	class:Rack
 Error	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/slop-3.6.0/lib/slop.rb	/^  class Error < StandardError; end$/;"	c	class:Slop
 Error	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/error.rb	/^  class Error < StandardError$/;"	c	class:Thor
-Error	/home/vagrant/code/walletone/prototype/w1/order_delivery_update_service.rb	/^    class Error < StandardError; end$/;"	c	class:W1
 ErrorGenerator	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/error_generator.rb	/^    class ErrorGenerator$/;"	c	class:RSpec.Mocks
 ErrorResponse	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/responses.rb	/^  class ErrorResponse < Response$/;"	c	class:Celluloid
 ErrorWrapper	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/lint.rb	/^    class ErrorWrapper$/;"	c	class:Rack.Lint
@@ -1679,7 +1679,7 @@ FooInspector	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-
 FooOptions	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/options_spec.rb	/^  class FooOptions < YARD::Options$/;"	c
 Food	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/food.rb	/^  module Food$/;"	m	class:FFaker
 ForRedCloth	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coderay-1.1.0/lib/coderay/for_redcloth.rb	/^  module ForRedCloth$/;"	m	class:CodeRay
-FormOptions	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^  class FormOptions$/;"	c	class:W1
+Form	/home/vagrant/code/walletone/lib/walletone/form.rb	/^  class Form$/;"	c	class:Walletone
 Formatador	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/formatador-0.2.5/lib/formatador.rb	/^class Formatador$/;"	c
 Formatador	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/formatador-0.2.5/lib/formatador/progressbar.rb	/^class Formatador$/;"	c
 Formatador	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/formatador-0.2.5/lib/formatador/table.rb	/^class Formatador$/;"	c
@@ -2138,7 +2138,6 @@ InvalidCommandError	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems
 InvalidOption	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler.rb	/^  class InvalidOption         < BundlerError; status_code(15) ; end$/;"	c	class:Bundler
 InvalidOptionError	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/slop-3.6.0/lib/slop.rb	/^  class InvalidOptionError < Error; end$/;"	c	class:Slop
 InvalidParameterError	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/utils.rb	/^    class InvalidParameterError < ArgumentError; end$/;"	c	class:Rack.Utils
-InvalidPayment	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^  class InvalidPayment < StandardError;$/;"	c	class:W1
 InvalidScanner	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coderay-1.1.0/test/functional/basic.rb	/^  class InvalidScanner < CodeRay::Scanners::Scanner$/;"	c
 InvalidTemplateOperatorError	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/addressable-2.3.8/lib/addressable/template.rb	/^    class InvalidTemplateOperatorError < StandardError$/;"	c	class:Addressable.Template
 InvalidTemplateValueError	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/addressable-2.3.8/lib/addressable/template.rb	/^    class InvalidTemplateValueError < StandardError$/;"	c	class:Addressable.Template
@@ -2438,7 +2437,7 @@ Methods	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.
 Methods	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/lib/virtus/support/equalizer.rb	/^    module Methods$/;"	m	class:Virtus.Equalizer
 Metric	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/hitimes-1.2.2/lib/hitimes/metric.rb	/^  class Metric$/;"	c	class:Hitimes
 MiddleYard	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/code_objects/class_object_spec.rb	/^        class MiddleYard < SuperYard$/;"	c
-Middleware	/home/vagrant/code/walletone/lib/walletone/middleware.rb	/^  class Middleware$/;"	c	class:Walletone
+Middleware	/home/vagrant/code/walletone/lib/walletone/middleware.rb	/^  module Middleware$/;"	m	class:Walletone
 Milk	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coderay-1.1.0/test/functional/basic.rb	/^  class Milk < CodeRay::Encoders::Encoder$/;"	c	class:BasicTest
 Mime	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/mime.rb	/^  module Mime$/;"	m	class:Rack
 MiniTestWebMock	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/minitest/test_webmock.rb	/^class MiniTestWebMock < test_class$/;"	c
@@ -2717,8 +2716,6 @@ Options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.
 Options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/options.rb	/^  class Options$/;"	c	class:YARD
 OptionsHelpers	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/helpers/options_helpers.rb	/^    module OptionsHelpers$/;"	m	class:Pry.Helpers
 Or	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/matchers/built_in/compound.rb	/^        class Or < self$/;"	c	class:RSpec.Matchers.BuiltIn.indent_multiline_message.NestedEvaluator
-OrderDeliveryService	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^  class OrderDeliveryService$/;"	c	class:W1
-OrderDeliveryUpdateService	/home/vagrant/code/walletone/prototype/w1/order_delivery_update_service.rb	/^  class OrderDeliveryUpdateService$/;"	c	class:W1
 OrderGroup	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/order_group.rb	/^    class OrderGroup$/;"	c	class:RSpec.Mocks
 OrderedHash	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor/core_ext/ordered_hash.rb	/^      class OrderedHash #:nodoc:$/;"	c	class:Bundler.CoreExt
 OrderedHash	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor/core_ext/ordered_hash.rb	/^      class OrderedHash < ::Hash$/;"	c	class:Bundler.CoreExt
@@ -2784,8 +2781,6 @@ PatronAdapter	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmo
 PatronSpecHelper	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/spec/acceptance/patron/patron_spec_helper.rb	/^module PatronSpecHelper$/;"	m
 Pause	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/commands/pause.rb	/^    class Pause$/;"	c	class:Guard.Commands
 Payment	/home/vagrant/code/walletone/lib/walletone/payment.rb	/^  class Payment < Fields$/;"	c	class:Walletone
-PaymentService	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^  class PaymentService$/;"	c	class:W1
-PaymentService	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^  class PaymentService::Notify$/;"	c	class:W1
 Pending	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/pending.rb	/^    module Pending$/;"	m	class:RSpec.Core
 PendingAttribute	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/lib/virtus/attribute/builder.rb	/^  class PendingAttribute$/;"	c	class:Virtus
 PendingExampleFailedAsExpectedNotification	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/notifications.rb	/^    class PendingExampleFailedAsExpectedNotification < FailedExampleNotification$/;"	c	class:RSpec
@@ -3389,7 +3384,6 @@ RequestPatternMatcher	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/ge
 RequestRegistry	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/request_registry.rb	/^  class RequestRegistry$/;"	c	class:WebMock
 RequestSignature	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/request_signature.rb	/^  class RequestSignature$/;"	c	class:WebMock
 RequestStub	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/request_stub.rb	/^  class RequestStub$/;"	c	class:WebMock
-Requester	/home/vagrant/code/walletone/prototype/w1/requester.rb	/^  module Requester$/;"	m	class:W1
 RequireFailed	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/notiffany-0.0.6/lib/notiffany/notifier/base.rb	/^      class RequireFailed < UnavailableError$/;"	c	class:Notiffany.Notifier.Base
 RequiredArgumentMissingError	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor/error.rb	/^  class RequiredArgumentMissingError < InvocationError$/;"	c	class:Bundler
 RequiredArgumentMissingError	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/error.rb	/^  class RequiredArgumentMissingError < InvocationError$/;"	c	class:Thor
@@ -3619,7 +3613,6 @@ ShowStatus	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6
 SignalConditionRequest	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/system_events.rb	/^  class SignalConditionRequest < SystemEvent$/;"	c	class:Celluloid
 Signals	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/signals.rb	/^  class Signals$/;"	c	class:Celluloid
 SignatureWithKeywordArgumentsMatcher	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-support-3.2.2/lib/rspec/support/method_signature_verifier.rb	/^      class SignatureWithKeywordArgumentsMatcher$/;"	c	class:RSpec.LooseSignatureVerifier
-SignedPayment	/home/vagrant/code/walletone/lib/walletone/signed_payment.rb	/^  class SignedPayment$/;"	c	class:Walletone
 Signer	/home/vagrant/code/walletone/lib/walletone/signer.rb	/^  class Signer$/;"	c	class:Walletone
 Silencer	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/silencer.rb	/^  class Silencer$/;"	c	class:Listen
 Silent	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/ui/silent.rb	/^    class Silent$/;"	c	class:Bundler.UI
@@ -3785,7 +3778,6 @@ SynchronizedDelegator	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/ge
 Syntax	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/fabrication-2.12.2/lib/fabrication/syntax/make.rb	/^  module Syntax$/;"	m	class:Fabrication
 Syntax	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/expectations/syntax.rb	/^    module Syntax$/;"	m	class:RSpec.Expectations
 Syntax	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/syntax.rb	/^    module Syntax$/;"	m	class:RSpec.Mocks
-SystemAPI	/home/vagrant/code/walletone/prototype/payments_callbacks.rb	/^class SystemAPI::PaymentsCallbacks < Grape::API$/;"	c
 SystemEvent	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/system_events.rb	/^  class SystemEvent; end$/;"	c	class:Celluloid
 SystemPager	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/pager.rb	/^  class SystemPager < NullPager$/;"	c	class:Pry
 SystemRubyVersion	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/ruby_version.rb	/^  class SystemRubyVersion < RubyVersion$/;"	c	class:Bundler
@@ -4372,17 +4364,6 @@ Virtus	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5
 VisibilityDirective	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/tags/directives.rb	/^    class VisibilityDirective < Directive$/;"	c	class:YARD.Tags
 Volatile	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thread_safe-0.3.5/lib/thread_safe/util/volatile.rb	/^    module Volatile$/;"	m	class:ThreadSafe.Util
 VolatileTuple	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thread_safe-0.3.5/lib/thread_safe/util/volatile_tuple.rb	/^    class VolatileTuple$/;"	c	class:ThreadSafe.Util
-W1	/home/vagrant/code/walletone/prototype/w1.rb	/^module W1$/;"	m
-W1	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^module W1$/;"	m
-W1	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^class W1::OrderDeliveryService::Error < StandardError$/;"	c
-W1	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^module W1$/;"	m
-W1	/home/vagrant/code/walletone/prototype/w1/order_delivery_update_service.rb	/^module W1$/;"	m
-W1	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^module W1$/;"	m
-W1	/home/vagrant/code/walletone/prototype/w1/payment_service/error.rb	/^class W1::PaymentService::Error < StandardError$/;"	c
-W1	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^module W1$/;"	m
-W1	/home/vagrant/code/walletone/prototype/w1/registration_service.rb	/^class W1::RegistrationService$/;"	c
-W1	/home/vagrant/code/walletone/prototype/w1/requester.rb	/^module W1$/;"	m
-W1ApiMock	/home/vagrant/code/walletone/prototype/spec/support/w1_api_mock.rb	/^class W1ApiMock < ApiMockBase$/;"	c
 WEBrick	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/handler/webrick.rb	/^    class WEBrick < ::WEBrick::HTTPServlet::AbstractServlet$/;"	c	class:Rack.Handler
 WEBrick	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/handler/webrick.rb	/^class WEBrick::HTTPResponse$/;"	c
 WEBrick	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/server/webrick_adapter.rb	/^class WEBrick::HTTPRequest$/;"	c
@@ -4396,11 +4377,12 @@ Walletone	/home/vagrant/code/walletone/lib/walletone.rb	/^module Walletone$/;"	m
 Walletone	/home/vagrant/code/walletone/lib/walletone/errors/bad_url_error.rb	/^module Walletone$/;"	m
 Walletone	/home/vagrant/code/walletone/lib/walletone/errors/walletone_error.rb	/^module Walletone$/;"	m
 Walletone	/home/vagrant/code/walletone/lib/walletone/fields.rb	/^module Walletone$/;"	m
+Walletone	/home/vagrant/code/walletone/lib/walletone/form.rb	/^module Walletone$/;"	m
 Walletone	/home/vagrant/code/walletone/lib/walletone/middleware.rb	/^module Walletone$/;"	m
+Walletone	/home/vagrant/code/walletone/lib/walletone/middleware/base.rb	/^module Walletone::Middleware$/;"	m
+Walletone	/home/vagrant/code/walletone/lib/walletone/middleware/callback.rb	/^module Walletone::Middleware$/;"	m
 Walletone	/home/vagrant/code/walletone/lib/walletone/notification.rb	/^module Walletone$/;"	m
-Walletone	/home/vagrant/code/walletone/lib/walletone/params_encoding.rb	/^module Walletone::ParamsEncoding$/;"	m
 Walletone	/home/vagrant/code/walletone/lib/walletone/payment.rb	/^module Walletone$/;"	m
-Walletone	/home/vagrant/code/walletone/lib/walletone/signed_payment.rb	/^module Walletone$/;"	m
 Walletone	/home/vagrant/code/walletone/lib/walletone/signer.rb	/^module Walletone$/;"	m
 Walletone	/home/vagrant/code/walletone/lib/walletone/version.rb	/^module Walletone$/;"	m
 WalletoneError	/home/vagrant/code/walletone/lib/walletone/errors/walletone_error.rb	/^  class WalletoneError < StandardError$/;"	c	class:Walletone
@@ -4742,7 +4724,7 @@ ZipJSON	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/
 []	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/i18n/messages.rb	/^      def [](id)$/;"	f	class:YARD.I18n.Messages
 []	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/options.rb	/^    def [](key) send(key) end$/;"	f	class:YARD.Options
 []	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/templates/section.rb	/^      def [](*args)$/;"	f	class:YARD.Templates.Section
-[]	/home/vagrant/code/walletone/lib/walletone/signed_payment.rb	/^    def [](name)$/;"	f	class:Walletone.SignedPayment
+[]	/home/vagrant/code/walletone/lib/walletone/fields.rb	/^    def [] key$/;"	f	class:Walletone
 []=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/settings.rb	/^    def []=(key, value)$/;"	f	class:Bundler.Settings
 []=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/spec_set.rb	/^    def []=(key, value)$/;"	f	class:Bundler
 []=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor/core_ext/hash_with_indifferent_access.rb	/^      def []=(key, value)$/;"	f	class:Bundler.CoreExt.HashWithIndifferentAccess
@@ -4773,6 +4755,7 @@ ZipJSON	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/
 []=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/core_ext/symbol_hash.rb	/^  def []=(key, value)$/;"	f	class:SymbolHash
 []=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/options.rb	/^    def []=(key, value) send("#{key}=", value) end$/;"	f	class:YARD.Options
 []=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/server/webrick_servlet_spec.rb	/^        def []=(name, value) (self.headers ||= {})[name] = value end$/;"	f
+[]=	/home/vagrant/code/walletone/lib/walletone/fields.rb	/^    def []= key, value$/;"	f	class:Walletone
 __binding__	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/core_extensions.rb	/^  def __binding__$/;"	f	class:BasicObject
 __binding__	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/core_extensions.rb	/^  def __binding__$/;"	f	class:Object
 __build_mock_proxy	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/test_double.rb	/^      def __build_mock_proxy(order_group)$/;"	f	class:RSpec.Mocks.TestDouble
@@ -5132,7 +5115,6 @@ accept_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coer
 accept_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/lib/virtus/support/options.rb	/^    def accept_options(*new_options)$/;"	f	class:Virtus.Options
 accept_paragraph	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/templates/helpers/markup/rdoc_markup.rb	/^          def accept_paragraph(*args)$/;"	f	class:YARD.Templates.Helpers.Markup.RDocMarkupToHtml
 accepted?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/response.rb	/^      def accepted?;           status == 202;                        end$/;"	f	class:Rack.Response.Helpers
-accepted?	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def accepted?$/;"	f	class:W1.PaymentService
 accepted_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/axiom-types-0.1.1/lib/axiom/types/support/options.rb	/^      def accepted_options$/;"	f	class:Axiom.Types.Options
 accepted_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coercible-1.0.0/lib/support/options.rb	/^    def accepted_options$/;"	f	class:Coercible.Options
 accepted_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/lib/virtus/support/options.rb	/^    def accepted_options$/;"	f	class:Virtus.Options
@@ -5202,7 +5184,6 @@ add	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.
 add	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/any_instance/message_chains.rb	/^        def add(method_name, chain)$/;"	f	class:RSpec.Mocks.AnyInstance.MessageChains
 add	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thread_safe-0.3.5/lib/thread_safe/util/adder.rb	/^      def add(x)$/;"	f	class:ThreadSafe.Util.Adder
 add	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/logging.rb	/^    def add(*args)$/;"	f	class:YARD.Logger
-add	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add key, value$/;"	f	class:W1.FormOptions
 add_accepted_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coercible-1.0.0/lib/support/options.rb	/^    def add_accepted_options(new_options)$/;"	f	class:Coercible
 add_accepted_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/lib/virtus/support/options.rb	/^    def add_accepted_options(new_options)$/;"	f	class:Virtus
 add_after_request_callback	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/typhoeus_hydra_adapter.rb	/^        def self.add_after_request_callback$/;"	F	class:WebMock.HttpLibAdapters.TyphoeusAdapter
@@ -5219,10 +5200,8 @@ add_comment	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10
 add_comment	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/i18n/message.rb	/^      def add_comment(comment)$/;"	f	class:YARD.I18n.Message
 add_comment	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/ruby/ruby_parser.rb	/^        def add_comment(line, node = nil, before_node = nil, into = false)$/;"	f	class:YARD.Parser.Ruby.RipperParser
 add_constraint	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/axiom-types-0.1.1/lib/axiom/types/type.rb	/^      def self.add_constraint(constraint)$/;"	F	class:Axiom.Types.Type
-add_currency	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_currency$/;"	f	class:W1.FormOptions
 add_default_paths	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/cli/yri.rb	/^      def add_default_paths$/;"	f	class:YARD.CLI.YRI
 add_default_stub	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/method_double.rb	/^      def add_default_stub(*args, &implementation)$/;"	f	class:RSpec.Mocks
-add_delivery	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_delivery$/;"	f	class:W1.FormOptions
 add_deprecated	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/deprecated/dsl.rb	/^      def self.add_deprecated(dsl_klass)$/;"	F	class:Guard.Deprecated.Dsl
 add_deprecated	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/deprecated/evaluator.rb	/^      def self.add_deprecated(klass)$/;"	F	class:Guard.Deprecated.Evaluator
 add_deprecated	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/deprecated/guard.rb	/^      def self.add_deprecated(klass)$/;"	F	class:Guard.Deprecated.Guard
@@ -5230,11 +5209,9 @@ add_deprecated	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guar
 add_deprecated	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/deprecated/watcher.rb	/^      def self.add_deprecated(dsl_klass)$/;"	F	class:Guard.Deprecated.Watcher
 add_descendant	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/descendants_tracker-0.0.4/lib/descendants_tracker.rb	/^  def add_descendant(descendant)$/;"	f
 add_description	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10.4.2/lib/rake/task.rb	/^    def add_description(description)$/;"	f	class:Rake.Task
-add_description	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_description$/;"	f	class:W1.FormOptions
 add_dir	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/record.rb	/^    def add_dir(dir, rel_path)$/;"	f	class:Listen.Record
 add_dir_to_load_path	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/ruby_project.rb	/^      def add_dir_to_load_path(dir)$/;"	f	class:RSpec.Core.RubyProject
 add_edge	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/molinillo/lib/molinillo/dependency_graph.rb	/^    def add_edge(origin, destination, requirement)$/;"	f	class:Bundler
-add_email	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_email$/;"	f	class:W1.FormOptions
 add_excon_stub	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/excon_adapter.rb	/^        def self.add_excon_stub$/;"	F	class:WebMock.HttpLibAdapters.ExconAdapter
 add_expectation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/method_double.rb	/^      def add_expectation(error_generator, expectation_ordering, expected_from, opts, &implementation)$/;"	f	class:RSpec.Mocks
 add_expectation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/verifying_proxy.rb	/^      def add_expectation(*args, &block)$/;"	f	class:RSpec.Mocks.VerifyingMethodDouble
@@ -5274,7 +5251,6 @@ add_location	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-
 add_location	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/i18n/message.rb	/^      def add_location(path, line)$/;"	f	class:YARD.I18n.Message
 add_marker	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/code/loc.rb	/^      def add_marker(marker_lineno)$/;"	f	class:Pry.Code.LOC
 add_matching	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10.4.2/lib/rake/file_list.rb	/^    def add_matching(pattern)$/;"	f
-add_merchant_id	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_merchant_id$/;"	f	class:W1.FormOptions
 add_message_expectation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/proxy.rb	/^      def add_message_expectation(method_name, opts={}, &block)$/;"	f	class:RSpec.Mocks.Proxy
 add_message_expectation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/proxy.rb	/^      def add_message_expectation(method_name, opts={}, &block)$/;"	f	class:RSpec.Mocks.ProxyForNil
 add_message_expectation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/verifying_proxy.rb	/^      def add_message_expectation(method_name, opts={}, &block)$/;"	f	class:RSpec.Mocks.VerifyingProxyMethods
@@ -5286,10 +5262,7 @@ add_old_hunk_to_hunk	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gem
 add_option_processor	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/cli.rb	/^      def add_option_processor(&block)$/;"	f	class:Pry.CLI
 add_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/cli.rb	/^      def add_options(&block)$/;"	f	class:Pry.CLI
 add_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/templates/template.rb	/^      def add_options(opts = nil)$/;"	f	class:YARD.Templates
-add_order_id	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_order_id$/;"	f	class:W1.FormOptions
 add_path_source	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/source_list.rb	/^    def add_path_source(options = {})$/;"	f	class:Bundler.SourceList
-add_payment_amount	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_payment_amount$/;"	f	class:W1.FormOptions
-add_payment_methods	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_payment_methods$/;"	f	class:W1.FormOptions
 add_plugin	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/deprecated/guard.rb	/^        def add_plugin(name, options = {})$/;"	f	class:Guard.Deprecated.Guard.ClassMethods.options
 add_plugin_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/cli.rb	/^      def add_plugin_options$/;"	f	class:Pry.CLI
 add_query_params	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/request_pattern.rb	/^    def add_query_params(query_params)$/;"	f	class:URIAddressablePattern
@@ -5307,7 +5280,6 @@ add_remove_via_compute	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/g
 add_remove_via_compute_if_absent_present	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thread_safe-0.3.5/test/test_cache_loops.rb	/^  def add_remove_via_compute_if_absent_present$/;"	f	class:TestCacheTorture
 add_remove_via_compute_if_absent_present	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thread_safe-0.3.5/test/test_cache_loops.rb	/^  def add_remove_via_compute_if_absent_present(opts = {})$/;"	f	class:TestCacheTorture
 add_requires	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/drb.rb	/^      def add_requires(argv)$/;"	f	class:RSpec.Core.DRbOptions
-add_return_urls	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_return_urls$/;"	f	class:W1.FormOptions
 add_root_vertex	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/molinillo/lib/molinillo/dependency_graph.rb	/^    def add_root_vertex(name, payload)$/;"	f	class:Bundler
 add_rubygems_remote	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/source_list.rb	/^    def add_rubygems_remote(uri)$/;"	f	class:Bundler.SourceList
 add_rubygems_source	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/source_list.rb	/^    def add_rubygems_source(options = {})$/;"	f	class:Bundler.SourceList
@@ -5318,7 +5290,6 @@ add_setting	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-c
 add_setting	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/configuration.rb	/^      def self.add_setting(name, opts={})$/;"	F	class:RSpec.Core.Configuration
 add_shared_group_lines	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/notifications.rb	/^      def add_shared_group_lines(lines, colorizer)$/;"	f	class:RSpec.Notifications
 add_should_and_should_not_to	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/expectations/configuration.rb	/^      def add_should_and_should_not_to(*modules)$/;"	f	class:RSpec.Expectations.Configuration
-add_signature	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def add_signature$/;"	f	class:W1.FormOptions
 add_simple_expectation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/method_double.rb	/^      def add_simple_expectation(method_name, response, error_generator, backtrace_line)$/;"	f	class:RSpec.Mocks
 add_simple_expectation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/proxy.rb	/^      def add_simple_expectation(method_name, response, location)$/;"	f	class:RSpec.Mocks.PartialDoubleProxy
 add_simple_expectation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/proxy.rb	/^      def add_simple_expectation(method_name, response, location)$/;"	f	class:RSpec.Mocks.Proxy
@@ -5597,7 +5568,7 @@ arrondissement	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffak
 arrparse	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/utils/okjson.rb	/^  def arrparse(ts)$/;"	f	class:Rack
 article	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/memoized_helpers.rb	/^          def self.article$/;"	F	class:RSpec.Core.MemoizedHelpers.After
 article	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/memoized_helpers.rb	/^          def self.article$/;"	F	class:RSpec.Core.MemoizedHelpers.Before
-as_list	/home/vagrant/code/walletone/lib/walletone/fields.rb	/^    def as_list$/;"	f	class:Walletone.Fields
+as_list	/home/vagrant/code/walletone/lib/walletone/fields.rb	/^    def as_list$/;"	f	class:Walletone
 as_null_object	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/proxy.rb	/^      def as_null_object$/;"	f	class:RSpec.Mocks.Proxy
 as_null_object	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/syntax.rb	/^          def as_null_object$/;"	f	class:RSpec.Mocks.Syntax.enable_should
 as_null_object	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/test_double.rb	/^      def as_null_object$/;"	f	class:RSpec.Mocks.TestDouble
@@ -6142,7 +6113,6 @@ calculate	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8
 calculate	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/lib/ffi/tools/struct_generator.rb	/^    def calculate(options = {})$/;"	f	class:FFI.StructGenerator
 calculate_datum	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/formatador-0.2.5/lib/formatador/table.rb	/^  def calculate_datum(header, hash)$/;"	f	class:Formatador
 calculate_slowest_groups	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/notifications.rb	/^      def calculate_slowest_groups$/;"	f	class:RSpec.SummaryNotification.ProfileNotification.slowest_examples
-calculated_signature	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def calculated_signature$/;"	f	class:W1.PaymentService
 call	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/actor.rb	/^      def call(mailbox, meth, *args, &block)$/;"	f	class:Celluloid.Actor
 call	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/calls.rb	/^    def call$/;"	f	class:Celluloid.BlockCall
 call	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/cell.rb	/^      def call(event)$/;"	f	class:Celluloid.Cell.ExitHandler
@@ -6239,7 +6209,7 @@ call	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/l
 call	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/tags/directives.rb	/^      def call; raise NotImplementedError end$/;"	f	class:YARD.Tags.Directive
 call	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/verifier.rb	/^    def call(object)$/;"	f	class:YARD.Verifier
 call	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/server/commands/library_command_spec.rb	/^  def call$/;"	f
-call	/home/vagrant/code/walletone/lib/walletone/middleware.rb	/^    def call(env)$/;"	f	class:Walletone.Middleware
+call	/home/vagrant/code/walletone/lib/walletone/middleware/base.rb	/^    def call(env)$/;"	f	class:Walletone.Base
 call?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/ruby/ast_node.rb	/^        def call?$/;"	f	class:YARD.Parser.Ruby.AstNode
 call?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/ruby/ast_node.rb	/^        def call?; true end$/;"	f	class:YARD.Parser.Ruby.MethodCallNode
 call_action	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/watcher.rb	/^    def call_action(matches)$/;"	f	class:Guard.Watcher
@@ -6415,6 +6385,7 @@ check_unknown_options?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/g
 check_version!	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-support-3.2.2/lib/rspec/support/version_checker.rb	/^      def check_version!$/;"	f	class:RSpec.Support.VersionChecker
 check_version!	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/util/version_checker.rb	/^    def check_version!$/;"	f	class:WebMock.VersionChecker
 checkout	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/source/git/git_proxy.rb	/^        def checkout$/;"	f	class:Bundler.Source.Git.GitProxy
+checkout_url	/home/vagrant/code/walletone/lib/walletone/form.rb	/^    def checkout_url$/;"	f	class:Walletone.Form
 checksum_for	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/registry.rb	/^      def checksum_for(data)$/;"	f	class:YARD.Registry
 checksums	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/registry.rb	/^      def checksums$/;"	f	class:YARD.Registry
 checksums_path	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/registry_store.rb	/^    def checksums_path$/;"	f	class:YARD.RegistryStore
@@ -7026,7 +6997,6 @@ create	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5
 create	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/code_objects/macro_object.rb	/^        def create(macro_name, data, method_object = nil)$/;"	f	class:YARD.CodeObjects.MacroObject
 create	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/core_ext/hash.rb	/^    def create(*args)$/;"	f	class:Hash
 create	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/code_objects/macro_object_spec.rb	/^    def create(*args) MacroObject.create(*args) end$/;"	f
-create	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def create$/;"	f	class:W1.OrderDeliveryService
 create_attribute_data	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/tags/directives.rb	/^      def create_attribute_data(object)$/;"	f	class:YARD.Tags.AttributeDirective
 create_attributes	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/handlers/ruby/struct_handler_methods.rb	/^  def create_attributes(klass, members)$/;"	f
 create_bundle_path	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/installer.rb	/^    def create_bundle_path$/;"	f
@@ -7161,7 +7131,6 @@ debug	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/lumberjack-1.
 debug	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/nulllogger.rb	/^    def debug(progname = nil, &block); end$/;"	f	class:Rack.NullLogger
 debug	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/logging.rb	/^    def debug(*args)$/;"	f	class:YARD.Logger
 debug	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/ruby/legacy/ruby_lex.rb	/^      def RubyLex.debug?$/;"	F	class:YARD.Parser.RubyLex
-debug	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def debug params$/;"	f	class:W1.OrderDeliveryService
 debug?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/resolver.rb	/^    def debug?$/;"	f	class:Bundler.Resolver.Molinillo
 debug?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/ui/shell.rb	/^      def debug?$/;"	f	class:Bundler.UI.Shell
 debug?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/ui/silent.rb	/^      def debug?$/;"	f	class:Bundler.UI.Silent
@@ -7353,7 +7322,6 @@ delete_tmp_dir	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/lumb
 deleting?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/diff-lcs-1.2.5/lib/diff/lcs/change.rb	/^  def deleting?$/;"	f	class:Diff
 deliver	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/tasks/task_fiber.rb	/^    def deliver(value)$/;"	f	class:Celluloid.TaskFiber
 deliver	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/tasks/task_thread.rb	/^    def deliver(value)$/;"	f	class:Celluloid.TaskThread
-delivery_comments	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def delivery_comments$/;"	f	class:W1.FormOptions
 departement	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/address_sn.rb	/^    def departement$/;"	f	class:FFaker.AddressSN
 dependencies	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/environment.rb	/^    def dependencies$/;"	f	class:Bundler.Environment
 dependencies	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/templates/default/module/dot/setup.rb	/^def dependencies$/;"	f
@@ -8055,12 +8023,10 @@ error	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-compat-
 error	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/logger.rb	/^    def error(message = nil, progname = nil, &block)$/;"	f	class:Lumberjack.Logger
 error	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/nulllogger.rb	/^    def error(progname = nil, &block); end$/;"	f	class:Rack.NullLogger
 error	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/shell/basic.rb	/^      def error(statement)$/;"	f	class:Thor.Shell
-error	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def error params$/;"	f	class:W1.OrderDeliveryService
 error?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/logger.rb	/^    def error?$/;"	f	class:Lumberjack.Logger
 error?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/nulllogger.rb	/^    def error? ; end$/;"	f	class:Rack.NullLogger
 error?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10.4.2/lib/rake/promise.rb	/^    def error?$/;"	f	class:Rake.Promise
 error_and_message_match?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/matchers/built_in/raise_error.rb	/^        def error_and_message_match?$/;"	f	class:RSpec.Matchers.BuiltIn.RaiseError
-error_catched	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^    def error_catched err$/;"	f	class:W1.PaymentService
 error_list	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/commands/ls.rb	/^    def error_list$/;"	f	class:Pry.Command
 error_message	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/net/http/persistent.rb	/^  def error_message connection$/;"	f	class:Net
 error_message	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-support-3.2.2/lib/rspec/support/method_signature_verifier.rb	/^      def error_message$/;"	f	class:RSpec.Support.MethodSignatureVerifier
@@ -8406,7 +8372,6 @@ failed	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-rspec-
 failed	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/spec/acceptance/em_http_request/em_http_request_spec_helper.rb	/^  def failed$/;"	f	class:EMHttpRequestSpecHelper
 failed_examples	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/notifications.rb	/^      def failed_examples$/;"	f	class:RSpec.Notifications.ExamplesNotification
 failed_fast?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/message_expectation.rb	/^        def failed_fast?$/;"	f	class:RSpec.Mocks.MessageExpectation.ImplementationDetails
-failed_payment	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^    def failed_payment$/;"	f	class:W1.PaymentService
 failure	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/assertion_failure.rb	/^      def failure(message)$/;"	f	class:WebMock.AssertionFailure
 failure_count	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/notifications.rb	/^      def failure_count$/;"	f	class:RSpec.SummaryNotification
 failure_lines	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/notifications.rb	/^      def failure_lines$/;"	f	class:RSpec.Notifications.FailedExampleNotification
@@ -8516,6 +8481,7 @@ fetch	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.
 fetch	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/memoized_helpers.rb	/^        def self.fetch(key, &_block)$/;"	F	class:RSpec.Core.MemoizedHelpers.ContextHookMemoizedHash
 fetch	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/ordering.rb	/^        def fetch(name, &fallback)$/;"	f	class:RSpec.Core.Ordering.Registry
 fetch	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thread_safe-0.3.5/lib/thread_safe/cache.rb	/^    def fetch(key, default_value = NULL)$/;"	f	class:Cache
+fetch	/home/vagrant/code/walletone/lib/walletone/fields.rb	/^    def fetch key, default=nil$/;"	f	class:Walletone
 fetch_all_remote_specs	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/fetcher.rb	/^    def fetch_all_remote_specs$/;"	f
 fetch_all_remote_specs	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/rubygems_integration.rb	/^      def fetch_all_remote_specs$/;"	f	class:Bundler.RubygemsIntegration.Future
 fetch_all_remote_specs	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/rubygems_integration.rb	/^    def fetch_all_remote_specs$/;"	f	class:Bundler.RubygemsIntegration
@@ -8540,7 +8506,6 @@ ffi_lib_flags	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1
 ffi_libraries	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/lib/ffi/library.rb	/^    def ffi_libraries$/;"	f	class:FFI.Library
 field	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/lib/ffi/tools/struct_generator.rb	/^    def field(name, type=nil)$/;"	f	class:FFI
 field_for_type	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/lib/ffi/struct_layout_builder.rb	/^    def field_for_type(name, offset, type)$/;"	f	class:FFI.StructLayoutBuilder
-fields	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def fields$/;"	f	class:W1.OrderDeliveryService
 fields_as_string	/home/vagrant/code/walletone/lib/walletone/signer.rb	/^    def fields_as_string secret_key$/;"	f	class:Walletone.Signer
 figure_path	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/reloader.rb	/^      def figure_path(file, paths)$/;"	f	class:Rack.Reloader.Stat
 file	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/last_exception.rb	/^  def file$/;"	f	class:Pry
@@ -8602,7 +8567,6 @@ fill_accumulator_for_dot	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0
 fill_accumulator_for_flat	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/util/query_mapper.rb	/^      def fill_accumulator_for_flat(accumulator, key, value)$/;"	f	class:WebMock
 fill_accumulator_for_flat_array	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/util/query_mapper.rb	/^      def fill_accumulator_for_flat_array(accumulator, key, value)$/;"	f	class:WebMock
 fill_accumulator_for_subscript	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/util/query_mapper.rb	/^      def fill_accumulator_for_subscript(accumulator, key, value)$/;"	f	class:WebMock
-fill_fields	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def fill_fields$/;"	f	class:W1.FormOptions
 filter	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-support-3.2.2/lib/rspec/support/spec/shell_out.rb	/^        def filter(output)$/;"	f	class:RSpec.Support.ShellOut
 filter	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-support-3.2.2/lib/rspec/support/spec/shell_out.rb	/^        def filter(output)$/;"	f	class:RSpec.Support.ShellOut.filter
 filter_applies?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/metadata_filter.rb	/^        def filter_applies?(key, value, metadata)$/;"	f	class:RSpec.Core.MetadataFilter
@@ -8985,7 +8949,7 @@ from_binding	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.
 from_buffer	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/tcp/message.rb	/^      def self.from_buffer(buffer)$/;"	F	class:Listen.TCP.Message
 from_class	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/method.rb	/^      def from_class(klass, name, target=TOPLEVEL_BINDING)$/;"	f	class:Method
 from_code_object	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/commands/edit/file_and_line_locator.rb	/^        def from_code_object(code_object, filename_argument)$/;"	f	class:Pry.Command.FileAndLineLocator
-from_cp1251_to_utf8	/home/vagrant/code/walletone/lib/walletone/params_encoding.rb	/^  def from_cp1251_to_utf8(params)$/;"	f	class:Walletone
+from_cp1251_to_utf8	/home/vagrant/code/walletone/lib/walletone/middleware/base.rb	/^    def from_cp1251_to_utf8(params)$/;"	f	class:Walletone.Base
 from_env	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/cpu_counter.rb	/^      def from_env$/;"	f	class:Celluloid.CPUCounter
 from_exception	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/commands/edit/file_and_line_locator.rb	/^        def from_exception(exception, backtrace_level)$/;"	f	class:Pry.Command.FileAndLineLocator
 from_file	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/code.rb	/^      def from_file(filename, code_type = nil)$/;"	f	class:Code
@@ -9104,8 +9068,6 @@ generate	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/fabricatio
 generate	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/lib/ffi/tools/types_generator.rb	/^    def self.generate(options = {})$/;"	F	class:FFI.TypesGenerator
 generate	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/i18n/pot_generator.rb	/^      def generate$/;"	f	class:YARD.I18n.PotGenerator
 generate	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/templates/engine.rb	/^        def generate(objects, options = {})$/;"	f	class:YARD.Templates
-generate	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def generate$/;"	f	class:W1.FormOptions
-generate	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def self.generate order$/;"	F	class:W1.FormOptions
 generate_assets	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/templates/default/fulldoc/html/setup.rb	/^def generate_assets$/;"	f
 generate_assets	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/templates/guide/fulldoc/html/setup.rb	/^def generate_assets$/;"	f
 generate_bin	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/source/path.rb	/^      def generate_bin(spec, disable_extensions = false)$/;"	f	class:Bundler.Source
@@ -9136,8 +9098,6 @@ generate_prompt	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry
 generate_sid	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/session/abstract/id.rb	/^        def generate_sid(secure = @sid_secure)$/;"	f	class:Rack.Session.Abstract.ID
 generate_sid	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/session/memcache.rb	/^      def generate_sid$/;"	f	class:Rack.Session.Memcache
 generate_sid	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/session/pool.rb	/^      def generate_sid$/;"	f	class:Rack.Session.Pool
-generate_signtature_from_list	/home/vagrant/code/walletone/prototype/w1.rb	/^  def self.generate_signtature_from_list list, md5_secret_key$/;"	F	class:W1
-generate_signtature_from_options	/home/vagrant/code/walletone/prototype/w1.rb	/^  def self.generate_signtature_from_options options, md5_secret_key$/;"	F	class:W1
 generate_ssn	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/ssn_se.rb	/^    def generate_ssn(from, to, gender)$/;"	f	class:FFaker.SSNSE
 generate_stack	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-support-3.2.2/lib/rspec/support/directory_maker.rb	/^        def self.generate_stack(path)$/;"	F	class:RSpec.Support.DirectoryMaker
 generate_standalone	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/installer.rb	/^    def generate_standalone(groups)$/;"	f
@@ -9170,7 +9130,6 @@ get	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/li
 get	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/lib/virtus/attribute_set.rb	/^    def get(object)$/;"	f	class:Virtus.AttributeSet
 get	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/util/hash_counter.rb	/^      def get key$/;"	f	class:WebMock.Util.Util
 get	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/registry_store.rb	/^    def get(key)$/;"	f	class:YARD.RegistryStore
-get	/home/vagrant/code/walletone/prototype/w1/requester.rb	/^    def get endpoint, params$/;"	f	class:W1.Requester
 get?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/request.rb	/^    def get?;     request_method == GET       end$/;"	f	class:Rack.Request.body.request_method.script_name=.path_info=.delete?
 get_and_check_node_tag	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/safe_yaml-1.0.4/lib/safe_yaml/resolver.rb	/^    def get_and_check_node_tag(node)$/;"	f	class:SafeYAML.Resolver
 get_and_set	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thread_safe-0.3.5/lib/thread_safe/atomic_reference_cache_backend.rb	/^    def get_and_set(key, value) # internalPut in the original CHMV8$/;"	f	class:ThreadSafe
@@ -9215,7 +9174,6 @@ get_read	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7
 get_read	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/ruby/legacy/ruby_lex.rb	/^      def get_read$/;"	f	class:YARD.Parser.RubyLex
 get_reader	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10.4.2/test/test_private_reader.rb	/^    def get_reader$/;"	f	class:TestPrivateAttrs.Sample
 get_response_cookie	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/em_http_request/em_http_request_1_x.rb	/^      def get_response_cookie(name)$/;"	f	class:WebMockHttpClient
-get_response_json	/home/vagrant/code/walletone/prototype/w1/order_delivery_update_service.rb	/^    def get_response_json$/;"	f	class:W1
 get_scanner_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coderay-1.1.0/lib/coderay.rb	/^    def get_scanner_options options$/;"	f	class:CodeRay
 get_session	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/session/abstract/id.rb	/^        def get_session(env, sid)$/;"	f	class:Rack.Session.Abstract.ID
 get_session	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/session/cookie.rb	/^      def get_session(env, sid)$/;"	f	class:Rack.Session.Cookie
@@ -9467,7 +9425,6 @@ header_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-
 header_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/commands/show_info.rb	/^    def header_options$/;"	f	class:Pry.Command
 header_str	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/curb_adapter.rb	/^      def header_str$/;"	f	class:Curl
 headers	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/response.rb	/^    def headers$/;"	f	class:WebMock.Response
-headers	/home/vagrant/code/walletone/prototype/w1/requester.rb	/^    def headers$/;"	f	class:W1.Requester
 headers=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/request_signature.rb	/^    def headers=(headers)$/;"	f	class:WebMock.RequestSignature
 headers=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/response.rb	/^    def headers=(headers)$/;"	f	class:WebMock.Response
 headers_from_session	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/httpclient_adapter.rb	/^  def headers_from_session(uri)$/;"	f
@@ -9513,6 +9470,8 @@ hidden?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9
 hidden?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/mutate_const.rb	/^      def hidden?$/;"	f	class:RSpec.Mocks.Constant
 hidden?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb	/^    def hidden?$/;"	f	class:HiddenCommand
 hidden?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb	/^    def hidden?$/;"	f	class:Thor.Command
+hidden_field_tag	/home/vagrant/code/walletone/lib/walletone/form.rb	/^    def hidden_field_tag name, value$/;"	f	class:Walletone.Form.hidden_fields_tags
+hidden_fields_tags	/home/vagrant/code/walletone/lib/walletone/form.rb	/^    def hidden_fields_tags$/;"	f	class:Walletone.Form
 hide	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/mutate_const.rb	/^      def self.hide(constant_name)$/;"	F	class:RSpec.Mocks
 hide_const	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/example_methods.rb	/^      def hide_const(constant_name)$/;"	f	class:RSpec.Mocks.ExampleMethods
 hide_stubbing_instructions	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/webmock.rb	/^  def self.hide_stubbing_instructions!$/;"	F
@@ -9812,7 +9771,6 @@ info	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/l
 info	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-compat-1.2.1/lib/guard/compat/plugin.rb	/^      def self.info(message, options = {})$/;"	F	class:Guard.Compat.UI
 info	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/logger.rb	/^    def info(message = nil, progname = nil, &block)$/;"	f	class:Lumberjack.Logger
 info	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/nulllogger.rb	/^    def info(progname = nil, &block); end$/;"	f	class:Rack.NullLogger
-info	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def info params$/;"	f	class:W1.OrderDeliveryService
 info?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/logger.rb	/^    def info?$/;"	f	class:Lumberjack.Logger
 info?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/nulllogger.rb	/^    def info? ;  end$/;"	f	class:Rack.NullLogger
 informational?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/response.rb	/^      def informational?;      status >= 100 && status < 200;        end$/;"	f	class:Rack.Response.Helpers
@@ -10690,17 +10648,9 @@ initialize	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8
 initialize	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/templates/helpers/markup_helper_spec.rb	/^  def initialize(options = Templates::TemplateOptions.new)$/;"	f	class:GeneratorMock
 initialize	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/templates/onefile_spec.rb	/^  def initialize(files, string)$/;"	f	class:StringSerializer
 initialize	/home/vagrant/code/walletone/lib/walletone.rb	/^    def initialize$/;"	f	class:Walletone.Configuration
-initialize	/home/vagrant/code/walletone/lib/walletone/middleware.rb	/^    def initialize &callback$/;"	f	class:Walletone.Middleware
+initialize	/home/vagrant/code/walletone/lib/walletone/fields.rb	/^    def initialize attrs={}$/;"	f	class:Walletone
+initialize	/home/vagrant/code/walletone/lib/walletone/middleware/callback.rb	/^    def initialize callback$/;"	f	class:Walletone.Callback
 initialize	/home/vagrant/code/walletone/lib/walletone/notification.rb	/^    def initialize params$/;"	f	class:Walletone.Notification
-initialize	/home/vagrant/code/walletone/lib/walletone/signed_payment.rb	/^    def initialize(fields)$/;"	f	class:Walletone.SignedPayment
-initialize	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def initialize order$/;"	f	class:W1.FormOptions
-initialize	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def initialize order$/;"	f	class:W1.OrderDeliveryService
-initialize	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^  def initialize response$/;"	f	class:W1
-initialize	/home/vagrant/code/walletone/prototype/w1/order_delivery_update_service.rb	/^    def initialize order$/;"	f	class:W1.OrderDeliveryUpdateService
-initialize	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^    def initialize vendor: nil, params: nil$/;"	f	class:W1.PaymentService
-initialize	/home/vagrant/code/walletone/prototype/w1/payment_service/error.rb	/^  def initialize payment$/;"	f	class:W1
-initialize	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def initialize params, vendor$/;"	f	class:W1.PaymentService
-initialize	/home/vagrant/code/walletone/prototype/w1/registration_service.rb	/^  def initialize vendor$/;"	f	class:W1
 initialize_added	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor.rb	/^    def initialize_added #:nodoc:$/;"	f	class:printable_commands
 initialize_added	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor/base.rb	/^      def initialize_added #:nodoc:$/;"	f	class:Bundler
 initialize_added	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb	/^    def initialize_added #:nodoc:$/;"	f	class:printable_commands
@@ -10819,9 +10769,6 @@ inspect	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.
 inspect	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/ruby/legacy/statement.rb	/^      def inspect$/;"	f	class:YARD.Parser.Statement.to_s
 inspect	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/templates/section.rb	/^      def inspect$/;"	f	class:YARD.Templates.Section
 inspect	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/templates/template.rb	/^      def inspect$/;"	f	class:YARD.Templates
-inspect	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^  def inspect$/;"	f	class:W1
-inspect	/home/vagrant/code/walletone/prototype/w1/payment_service/error.rb	/^  def inspect$/;"	f	class:W1
-inspect	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def inspect$/;"	f	class:W1.PaymentService
 inspect_object	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/matchers/built_in/equal.rb	/^        def inspect_object(o)$/;"	f	class:RSpec.Matchers.BuiltIn.Equal
 inspect_output	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/example.rb	/^      def inspect_output$/;"	f	class:RSpec.Core
 inspect_thunk	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/rspec/example_actor_class.rb	/^      def inspect_thunk$/;"	f	class:ExampleActorClass.create
@@ -11063,7 +11010,6 @@ jruby?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-suppor
 jruby_18?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/current_ruby.rb	/^    def jruby_18?$/;"	f	class:Bundler.CurrentRuby
 jruby_19?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/current_ruby.rb	/^    def jruby_19?$/;"	f	class:Bundler.CurrentRuby
 jruby_19?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/helpers/base_helpers.rb	/^      def jruby_19?$/;"	f	class:Pry.Helpers.BaseHelpers
-json_response	/home/vagrant/code/walletone/prototype/spec/support/api_mock_base.rb	/^    def json_response(response_code, params=nil)$/;"	f	class:ApiMockBase
 jump	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/ruby/ast_node.rb	/^        def jump(*node_types)$/;"	f	class:YARD.Parser.Ruby.AstNode
 k	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/utils/module_utils.rb	/^    def k(arg)$/;"	f	class:FFaker.ModuleUtils
 kcodeu	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/test/spec_utils.rb	/^  def kcodeu$/;"	f
@@ -11263,7 +11209,6 @@ list_of_exactly_one_string?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.
 list_path	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/directory.rb	/^    def list_path$/;"	f	class:Rack.Directory
 list_prefix	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/server/router.rb	/^      def list_prefix; 'list' end$/;"	f	class:YARD.Server.Router
 list_prefix	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/server/router_spec.rb	/^  def list_prefix; 'mylist\/foo' end$/;"	f	class:MyRouterSpecRouter
-list_to_tuples	/home/vagrant/code/walletone/lib/walletone/signed_payment.rb	/^    def list_to_tuples(fields)$/;"	f	class:Walletone.SignedPayment
 listener=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/deprecated/guard.rb	/^        def listener=(_)$/;"	f	class:Guard.Deprecated.Guard.ClassMethods
 listener_args	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/internals/session.rb	/^      def listener_args$/;"	f	class:Guard.Internals.Session
 listeners_for	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/notifications.rb	/^      def listeners_for(pattern)$/;"	f	class:Celluloid.Notifications.Fanout
@@ -11413,7 +11358,8 @@ logger	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5
 logger	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/dsl_reader.rb	/^    def logger(_options)$/;"	f	class:Guard.DslReader
 logger	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/ui.rb	/^      def logger$/;"	f	class:Guard.UI
 logger	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/request.rb	/^    def logger;          @env['rack.logger']                      end$/;"	f	class:Rack.Request.body.request_method
-logging	/home/vagrant/code/walletone/prototype/payments_callbacks.rb	/^    def logging message$/;"	f	class:SystemAPI.prepared_params
+logger	/home/vagrant/code/walletone/lib/walletone.rb	/^  def self.logger$/;"	F	class:Walletone
+logger	/home/vagrant/code/walletone/lib/walletone/middleware/base.rb	/^    def logger$/;"	f	class:Walletone.Base
 logging_middleware	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/server.rb	/^      def logging_middleware$/;"	f
 login_user_name	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/internet_se.rb	/^    def login_user_name$/;"	f	class:FFaker.InternetSE
 long_desc	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor.rb	/^    def long_desc(long_description, options = {})$/;"	f	class:Bundler
@@ -11467,7 +11413,7 @@ make_plugin_hash	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/co
 make_raw_response	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/em_http_request/em_http_request_0_x.rb	/^      def make_raw_response(response)$/;"	f	class:EventMachine.WebMockHttpRequest
 make_raw_response	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/em_http_request/em_http_request_1_x.rb	/^      def make_raw_response(response)$/;"	f	class:WebMockHttpClient
 make_request	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/spec/acceptance/em_http_request/em_http_request_spec.rb	/^        def make_request$/;"	f
-make_response	/home/vagrant/code/walletone/lib/walletone/middleware.rb	/^    def make_response(result, description)$/;"	f	class:Walletone.Middleware
+make_response	/home/vagrant/code/walletone/lib/walletone/middleware/base.rb	/^    def make_response(result, description)$/;"	f	class:Walletone.Base
 make_rewindable	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/rewindable_input.rb	/^    def make_rewindable$/;"	f	class:Rack.RewindableInput
 make_sources	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10.4.2/lib/rake/task_manager.rb	/^    def make_sources(task_name, extensions)$/;"	f	class:Rake.TaskManager
 make_span_for_kinds	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coderay-1.1.0/lib/coderay/encoders/html.rb	/^    def make_span_for_kinds method, hint$/;"	f	class:CodeRay.Encoders.HTML
@@ -11705,9 +11651,6 @@ message	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-
 message	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/reporter.rb	/^    def message(message)$/;"	f	class:RSpec.Reporter
 message	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/i18n/message_spec.rb	/^  def message(id)$/;"	f
 message	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/i18n/messages_spec.rb	/^  def message(id)$/;"	f
-message	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^  def message$/;"	f	class:W1
-message	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^    def message$/;"	f	class:W1.InvalidPayment
-message	/home/vagrant/code/walletone/prototype/w1/payment_service/error.rb	/^  def message$/;"	f	class:W1
 message_bg=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/notiffany-0.0.6/lib/notiffany/notifier/tmux.rb	/^        def message_bg=(color)$/;"	f	class:Notiffany.Notifier.Tmux
 message_color	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/notifications.rb	/^      def message_color$/;"	f	class:RSpec.Notifications
 message_color	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/notifications.rb	/^      def message_color$/;"	f	class:RSpec.PendingExampleFailedAsExpectedNotification
@@ -12379,7 +12322,6 @@ open_editor_on_jruby	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gem
 open_file	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/test/spec_sendfile.rb	/^  def open_file(path)$/;"	f	class:sendfile_body
 open_pipe	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rb-fsevent-0.9.4/lib/rb-fsevent/fsevent.rb	/^    def open_pipe$/;"	f
 open_token	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coderay-1.1.0/lib/coderay/encoders/terminal.rb	/^      def open_token kind$/;"	f	class:CodeRay.Encoders.Terminal
-openapi_request	/home/vagrant/code/walletone/prototype/w1/requester.rb	/^    def openapi_request verb, endpoint, params$/;"	f	class:W1.Requester
 opposite_should_method	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/expectations/handler.rb	/^      def self.opposite_should_method$/;"	F	class:RSpec.Expectations.NegativeExpectationHandler
 opposite_should_method	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/expectations/handler.rb	/^      def self.opposite_should_method$/;"	F	class:RSpec.Expectations.PositiveExpectationHandler
 opt_parser	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/server.rb	/^      def opt_parser$/;"	f
@@ -12427,6 +12369,7 @@ options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.
 options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/lib/virtus/support/options.rb	/^    def options$/;"	f	class:Virtus.Options
 options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/server/doc_server_helper_spec.rb	/^  def options; OpenStruct.new end$/;"	f	class:MockDocServerHelper
 options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/templates/helpers/html_helper_spec.rb	/^  def options$/;"	f
+options	/home/vagrant/code/walletone/lib/walletone/form.rb	/^    def options$/;"	f	class:Walletone.Form.hidden_fields_tags
 options=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/guard-2.12.5/lib/guard/ui.rb	/^      def options=(options)$/;"	f	class:Guard.UI
 options=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/response.rb	/^    def options=(options)$/;"	f	class:WebMock
 options=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/templates/template.rb	/^      def options=(value)$/;"	f	class:YARD.Templates
@@ -12451,7 +12394,6 @@ order	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.
 order	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/ordering.rb	/^        def order(items)$/;"	f	class:RSpec.Core.Ordering.Identity
 order	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/ordering.rb	/^        def order(items)$/;"	f	class:RSpec.Core.Ordering.Random
 order	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/ordering.rb	/^        def order(list)$/;"	f	class:RSpec.Core.Ordering.Custom
-order	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def order$/;"	f	class:W1.PaymentService
 order=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/ordering.rb	/^        def order=(type)$/;"	f	class:RSpec.Core.Ordering.ConfigurationManager
 order_block_matchers	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/matchers/built_in/compound.rb	/^          def order_block_matchers$/;"	f	class:RSpec.Matchers.BuiltIn.indent_multiline_message.NestedEvaluator.initialize
 ordered	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/message_expectation.rb	/^      def ordered(&block)$/;"	f	class:RSpec.Mocks.MessageExpectation
@@ -12678,7 +12620,6 @@ parse_query	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.
 parse_query	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/utils.rb	/^    def parse_query(qs, d = nil, &unescaper)$/;"	f	class:Rack
 parse_rdoc_document_file	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/cli/yardopts_command.rb	/^      def parse_rdoc_document_file(file = '.document')$/;"	f	class:YARD
 parse_remaining_files	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/handlers/processor.rb	/^      def parse_remaining_files$/;"	f	class:YARD.Handlers
-parse_response	/home/vagrant/code/walletone/prototype/w1/requester.rb	/^    def parse_response response, format=:json$/;"	f	class:W1.Requester
 parse_sections	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/templates/section.rb	/^      def parse_sections(args)$/;"	f	class:YARD.Templates.Section
 parse_signature	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/tags/overload_tag.rb	/^      def parse_signature$/;"	f	class:YARD.Tags.OverloadTag
 parse_source	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/lockfile_parser.rb	/^    def parse_source(line)$/;"	f	class:Bundler.LockfileParser
@@ -12717,7 +12658,6 @@ parse_version	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmo
 parse_yardopts	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/cli/yardopts_command.rb	/^      def parse_yardopts(file = options_file)$/;"	f	class:YARD
 parse_yardopts_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/cli/yardopts_command.rb	/^      def parse_yardopts_options(*args)$/;"	f	class:YARD
 parseable_data?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/request.rb	/^    def parseable_data?$/;"	f	class:Rack.Request.body.request_method.script_name=.path_info=.delete?.options?.link?.patch?.post?.put?.trace?.unlink?
-parsed_body	/home/vagrant/code/walletone/prototype/spec/support/api_mock_base.rb	/^    def parsed_body$/;"	f	class:ApiMockBase
 parser	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/crack-0.4.2/lib/crack/xml.rb	/^    def self.parser$/;"	F	class:Crack.XML
 parser	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/crack-0.4.2/lib/crack/xml.rb	/^    def self.parser=(parser)$/;"	F	class:Crack.XML
 parser	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/option_parser.rb	/^    def parser(options)$/;"	f	class:RSpec.Parser
@@ -12815,9 +12755,6 @@ paused=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-2.10
 paused?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/listener.rb	/^    def paused?$/;"	f	class:Listen.Listener
 paused?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/timers-4.0.1/lib/timers/timer.rb	/^    def paused?$/;"	f	class:Timers.Timer
 payload=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/tcp/message.rb	/^      def payload=(payload)$/;"	f	class:Listen.TCP.Message
-payment	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^    def payment$/;"	f	class:W1.PaymentService
-payment_description	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def payment_description$/;"	f	class:W1.FormOptions
-payment_no	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def payment_no$/;"	f	class:W1.PaymentService
 peek	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor/parser/arguments.rb	/^    def peek$/;"	f	class:Bundler.Arguments
 peek	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor/parser/options.rb	/^    def peek$/;"	f	class:Bundler.Options.to_switches
 peek	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/parser/arguments.rb	/^    def peek$/;"	f	class:Thor.Arguments
@@ -12844,7 +12781,8 @@ perform	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffi-1.9.8/s
 perform	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/curb_adapter.rb	/^      def perform$/;"	f	class:Curl
 perform	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/http_rb/client.rb	/^    def perform(request, options)$/;"	f	class:HTTP.Client
 perform	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/http_rb/webmock.rb	/^    def perform$/;"	f	class:HTTP.WebMockPerform
-perform_and_get_response	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^    def perform_and_get_response$/;"	f	class:W1.PaymentService
+perform	/home/vagrant/code/walletone/lib/walletone/middleware/base.rb	/^    def perform notify, env$/;"	f	class:Walletone.Base
+perform	/home/vagrant/code/walletone/lib/walletone/middleware/callback.rb	/^    def perform notify, env$/;"	f	class:Walletone.Callback
 perform_callbacks	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/excon_adapter.rb	/^        def self.perform_callbacks(request, response, options = {})$/;"	F	class:WebMock.HttpLibAdapters.ExconAdapter
 perform_change	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/matchers/built_in/change.rb	/^        def perform_change(event_proc)$/;"	f	class:RSpec.Matchers.BuiltIn.ChangeDetails
 perform_get_with_returning_block	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/spec/acceptance/net_http/net_http_spec.rb	/^    def perform_get_with_returning_block$/;"	f
@@ -12932,7 +12870,6 @@ positive_failure_reason	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/
 positive_failure_reason	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/matchers/built_in/yield.rb	/^        def positive_failure_reason$/;"	f	class:RSpec.Matchers.YieldWithNoArgs
 possibility	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/molinillo/lib/molinillo/resolution.rb	/^      def possibility$/;"	f	class:Bundler.Resolver.Resolution
 post	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/mock.rb	/^    def post(uri, opts={})    request("POST", uri, opts)    end$/;"	f	class:Rack.MockRequest.get
-post	/home/vagrant/code/walletone/prototype/w1/requester.rb	/^    def post endpoint, params$/;"	f	class:W1.Requester
 post?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/request.rb	/^    def post?;    request_method == "POST"    end$/;"	f	class:Rack.Request.body.request_method.script_name=.path_info=.delete?.options?.link?.patch?
 post_body=	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/curb_adapter.rb	/^      def post_body= data$/;"	f	class:Curl
 post_initialize	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/fabrication-2.12.2/lib/fabrication/generator/base.rb	/^  def post_initialize; end$/;"	f	class:Fabrication
@@ -12987,9 +12924,7 @@ prepare_for_invocation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/g
 prepare_for_invocation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb	/^      def prepare_for_invocation(key, name) #:nodoc:$/;"	f	class:Thor.Invocation.ClassMethods
 prepare_message	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor/shell/basic.rb	/^      def prepare_message(message, *color)$/;"	f	class:Bundler.Shell
 prepare_message	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/shell/basic.rb	/^      def prepare_message(message, *color)$/;"	f	class:Thor.Shell
-prepare_params	/home/vagrant/code/walletone/prototype/w1/requester.rb	/^    def prepare_params params$/;"	f	class:W1.Requester
 prepare_session	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/session/abstract/id.rb	/^        def prepare_session(env)$/;"	f	class:Rack.Session.Abstract.ID
-prepared_params	/home/vagrant/code/walletone/prototype/payments_callbacks.rb	/^    def prepared_params$/;"	f	class:SystemAPI
 prepend	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/configuration.rb	/^        def prepend(mod, *filters)$/;"	f	class:RSpec.Core.Configuration
 prepend	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/metadata_filter.rb	/^        def prepend(item, metadata)$/;"	f	class:RSpec.Core.FilterableItemRepository.QueryOptimized
 prepend	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/metadata_filter.rb	/^        def prepend(item, metadata)$/;"	f	class:RSpec.Core.FilterableItemRepository.UpdateOptimized
@@ -13286,8 +13221,6 @@ public_writer?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virt
 publish	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/notifications.rb	/^      def publish(pattern, *args)$/;"	f	class:Celluloid.Notifications.Fanout
 publish	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/notifications.rb	/^      def publish(pattern, *args)$/;"	f	class:Celluloid.Notifications.Subscriber
 publish	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/notifications.rb	/^    def publish(pattern, *args)$/;"	f	class:Celluloid.Notifications
-pull_redirect_uri	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def pull_redirect_uri body$/;"	f	class:W1.OrderDeliveryService
-pull_w1_order_id	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def pull_w1_order_id uri$/;"	f	class:W1.OrderDeliveryService
 punycode_adapt	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/addressable-2.3.8/lib/addressable/idna/pure.rb	/^    def self.punycode_adapt(delta, numpoints, firsttime)$/;"	F	class:Addressable
 punycode_basic	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/addressable-2.3.8/lib/addressable/idna/pure.rb	/^    def self.punycode_basic?(codepoint)$/;"	F	class:Addressable
 punycode_decode	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/addressable-2.3.8/lib/addressable/idna/native.rb	/^     def self.punycode_decode(value)$/;"	F	class:Addressable.IDNA
@@ -13584,7 +13517,6 @@ register	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.
 register	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/handlers/base.rb	/^      def register(*objects)$/;"	f	class:YARD.Handlers
 register	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/i18n/messages.rb	/^      def register(id)$/;"	f	class:YARD.I18n.Messages
 register	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/registry.rb	/^      def register(object)$/;"	f	class:YARD.Registry
-register	/home/vagrant/code/walletone/prototype/w1/registration_service.rb	/^  def register$/;"	f	class:W1
 register_constant_mutator	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/space.rb	/^      def register_constant_mutator(_mutator)$/;"	f	class:RSpec.Mocks.RootSpace
 register_constant_mutator	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-mocks-3.2.1/lib/rspec/mocks/space.rb	/^      def register_constant_mutator(mutator)$/;"	f	class:RSpec.Mocks.Space
 register_docstring	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/handlers/base.rb	/^      def register_docstring(object, docstring = statement.comments, stmt = statement)$/;"	f	class:YARD.Handlers
@@ -13794,7 +13726,6 @@ request	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.2
 request	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/webmock.rb	/^        def request(method, uri)$/;"	f	class:WebMock.included
 request	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/spec/acceptance/em_http_request/em_http_request_spec.rb	/^            def request(client, head, body)$/;"	f
 request	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/server/static_caching_spec.rb	/^    def request; @request ||= OpenStruct.new end$/;"	f
-request	/home/vagrant/code/walletone/prototype/w1/requester.rb	/^    def request method, uri, params='', headers={}$/;"	f	class:W1.Requester
 request_failed	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/net/http/persistent.rb	/^  def request_failed exception, req, connection # :nodoc:$/;"	f
 request_hash	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/typhoeus_hydra_adapter.rb	/^        def self.request_hash(request_signature)$/;"	F	class:WebMock.HttpLibAdapters
 request_issue_report_for	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/friendly_errors.rb	/^  def self.request_issue_report_for(e)$/;"	F	class:Bundler
@@ -13960,15 +13891,12 @@ response	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-
 response	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/test/spec_auth_digest.rb	/^    def response(password)$/;"	f	class:MockDigestRequest
 response	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/request_stub.rb	/^    def response$/;"	f	class:WebMock.RequestStub
 response	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/spec/acceptance/em_http_request/em_http_request_spec.rb	/^            def response(resp)$/;"	f
-response	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def response$/;"	f	class:W1.OrderDeliveryService
-response	/home/vagrant/code/walletone/prototype/w1/order_delivery_update_service.rb	/^    def response$/;"	f	class:W1
 response_body	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/file.rb	/^    def response_body$/;"	f	class:Rack
 response_code	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/curb_adapter.rb	/^      def response_code$/;"	f	class:Curl
 response_for	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/test/spec_session_cookie.rb	/^  def response_for(options={})$/;"	f
 response_for	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/response.rb	/^    def self.response_for(options)$/;"	F	class:WebMock.ResponseFactory
 response_for_request	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/http_rb/webmock.rb	/^    def response_for_request(signature)$/;"	f	class:HTTP.WebMockPerform
 response_for_request	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/stub_registry.rb	/^    def response_for_request(request_signature)$/;"	f	class:WebMock.StubRegistry
-response_json	/home/vagrant/code/walletone/prototype/w1/order_delivery_update_service.rb	/^    def response_json$/;"	f	class:W1
 restart	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/supervision_group.rb	/^      def restart$/;"	f	class:Celluloid.Member
 restart_actor	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/supervision_group.rb	/^    def restart_actor(actor, reason)$/;"	f	class:Celluloid
 restore	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/addressable-2.3.8/spec/addressable/template_spec.rb	/^  def self.restore(name, value)$/;"	F	class:ExampleTwoProcessor
@@ -13992,7 +13920,6 @@ resume	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/timers-4.0.1
 resume	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/timers-4.0.1/lib/timers/timer.rb	/^    def resume$/;"	f	class:Timers.Timer
 retrieve_command_name	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/thor/lib/thor.rb	/^    def retrieve_command_name(args) #:nodoc:$/;"	f	class:printable_commands
 retrieve_command_name	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb	/^    def retrieve_command_name(args) #:nodoc:$/;"	f	class:printable_commands
-retry_response	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^    def retry_response(message)$/;"	f	class:W1.PaymentService
 retry_update	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thread_safe-0.3.5/lib/thread_safe/util/striped64.rb	/^      def retry_update(x, hash_code, was_uncontended) # :yields: current_value$/;"	f	class:ThreadSafe.Util.Striped64
 return	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/templates/default/tags/setup.rb	/^def return$/;"	f
 return_type_from_tag	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/handlers/ruby/struct_handler_methods.rb	/^  def return_type_from_tag(member_tag)$/;"	f	class:YARD
@@ -14862,11 +14789,9 @@ signature	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.
 signature	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/templates/helpers/html_helper_spec.rb	/^    def signature(obj, link = false) super(obj, link).strip end$/;"	f	class:format_types
 signature	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/templates/helpers/text_helper_spec.rb	/^    def signature(obj) super(obj).strip end$/;"	f
 signature	/home/vagrant/code/walletone/lib/walletone/signer.rb	/^    def signature secret_key, hash_type=DEFAULT_HASH_TYPE$/;"	f	class:Walletone.Signer
-signature	/home/vagrant/code/walletone/prototype/w1/form_options.rb	/^    def signature$/;"	f	class:W1.FormOptions
-signature	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def signature$/;"	f	class:W1.PaymentService
 signature_types	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/templates/helpers/html_helper.rb	/^      def signature_types(meth, link = true)$/;"	f	class:YARD.Templates.HtmlHelper.format_object_name_list
 signed?	/home/vagrant/code/walletone/lib/walletone/payment.rb	/^    def signed?$/;"	f	class:Walletone.Payment
-signer	/home/vagrant/code/walletone/lib/walletone/fields.rb	/^    def signer$/;"	f	class:Walletone.Fields
+signer	/home/vagrant/code/walletone/lib/walletone/fields.rb	/^    def signer$/;"	f	class:Walletone
 silence	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/ui/shell.rb	/^      def silence$/;"	f	class:Bundler.UI.Shell
 silence	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/ui/silent.rb	/^      def silence$/;"	f	class:Bundler.UI.Silent
 silence	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/logging/incident_reporter.rb	/^    def silence$/;"	f	class:Celluloid.IncidentReporter
@@ -15167,7 +15092,6 @@ state	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/
 state	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/address_us.rb	/^    def state$/;"	f	class:FFaker.AddressUS
 state	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/command.rb	/^    def state$/;"	f
 state	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/backport_random.rb	/^          def state$/;"	f	class:RSpec.Core.Backports.Random.Implementation
-state	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def state$/;"	f	class:W1.PaymentService
 state_abbr	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/address_au.rb	/^    def state_abbr$/;"	f	class:FFaker.AddressAU
 state_abbr	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/address_br.rb	/^    def state_abbr$/;"	f	class:FFaker.AddressBR
 state_abbr	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/address_mx.rb	/^    def state_abbr(st_name = nil)$/;"	f	class:FFaker.AddressMX
@@ -15349,8 +15273,6 @@ succ	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/axiom-types-0.
 succ	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ice_nine-0.11.1/spec/unit/ice_nine/freezer/range/class_methods/deep_freeze_spec.rb	/^      def succ$/;"	f
 success?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/lib/virtus/attribute/coercer.rb	/^      def success?(primitive, value)$/;"	f	class:Virtus.Attribute.Coercer
 success?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus-1.0.5/lib/virtus/coercer.rb	/^    def success?(primitive, input)$/;"	f	class:Virtus.Coercer
-success_payment	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^    def success_payment$/;"	f	class:W1.PaymentService
-success_response	/home/vagrant/code/walletone/prototype/w1/payment_service.rb	/^    def success_response$/;"	f	class:W1.PaymentService
 successful?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/response.rb	/^      def successful?;         status >= 200 && status < 300;        end$/;"	f	class:Rack.Response.Helpers
 successive_yield_args	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/matchers/built_in/yield.rb	/^        def successive_yield_args$/;"	f	class:RSpec.Matchers.BuiltIn.YieldProbe
 successors	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/vendor/molinillo/lib/molinillo/dependency_graph.rb	/^      def successors$/;"	f	class:Bundler.Vertex
@@ -17058,7 +16980,6 @@ to_s	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/l
 to_s	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/ruby/legacy/statement.rb	/^      def to_s(include_block = true)$/;"	f	class:YARD.Parser.Statement
 to_s	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/parser/ruby/legacy/token_list.rb	/^      def to_s(full_statement = false, show_block = true)$/;"	f	class:YARD.Parser.TokenList
 to_s	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/server/library_version.rb	/^      def to_s(url_format = true)$/;"	f	class:YARD.Server.LibraryVersion
-to_s	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def to_s$/;"	f	class:W1.PaymentService
 to_sentence	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/matchers/pretty.rb	/^      def to_sentence(words)$/;"	f	class:RSpec.Matchers.Pretty
 to_set	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coercible-1.0.0/lib/coercible/coercer/array.rb	/^      def to_set(value)$/;"	f	class:Coercible.Coercer.Array
 to_specs	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/resolver.rb	/^      def to_specs$/;"	f	class:Bundler.Resolver.Molinillo.SpecGroup
@@ -17371,7 +17292,6 @@ update_index	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/virtus
 update_input_history	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/pry_instance.rb	/^  def update_input_history(code)$/;"	f	class:Pry
 update_param	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/request.rb	/^    def update_param(k, v)$/;"	f	class:Rack.Request.body.request_method.script_name=.path_info=.delete?.options?.link?.patch?.post?.put?.trace?.unlink?
 update_pattern_attr	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-core-3.2.3/lib/rspec/core/configuration.rb	/^      def update_pattern_attr(name, value)$/;"	f	class:RSpec.Core.Configuration.get_files_to_run
-update_state	/home/vagrant/code/walletone/prototype/w1/order_delivery_update_service.rb	/^    def update_state$/;"	f	class:W1.OrderDeliveryUpdateService
 upgrade_lockfile	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler.rb	/^    def upgrade_lockfile$/;"	f	class:Bundler
 upload	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10.4.2/lib/rake/contrib/compositepublisher.rb	/^    def upload$/;"	f	class:Rake.CompositePublisher
 upload	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10.4.2/lib/rake/contrib/ftptools.rb	/^    def upload(file)$/;"	f	class:Rake
@@ -17387,8 +17307,6 @@ uri	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/l
 uri	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/internet.rb	/^    def uri(protocol)$/;"	f	class:FFaker.Internet
 uri	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/internet_se.rb	/^    def uri(protocol)$/;"	f	class:FFaker.InternetSE
 uri	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/http_lib_adapters/em_http_request/em_http_request_1_x.rb	/^      def uri$/;"	f	class:WebMockHttpClient
-uri	/home/vagrant/code/walletone/prototype/w1/order_delivery_service.rb	/^    def uri$/;"	f	class:W1.OrderDeliveryService
-uri	/home/vagrant/code/walletone/prototype/w1/order_delivery_update_service.rb	/^    def uri$/;"	f	class:W1
 uri_escaped	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/source/git/git_proxy.rb	/^        def uri_escaped$/;"	f	class:Bundler.Source.Git
 uri_hash	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundler-1.9.1/lib/bundler/source/git.rb	/^      def uri_hash$/;"	f	class:Bundler
 uris_encoded_and_unencoded	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/util/uri.rb	/^      def self.uris_encoded_and_unencoded(uris)$/;"	F	class:WebMock.Util.URI
@@ -17470,7 +17388,6 @@ valid?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/l
 valid?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/auth/digest/nonce.rb	/^        def valid?$/;"	f	class:Rack.Auth.Digest
 valid?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-support-3.2.2/lib/rspec/support/method_signature_verifier.rb	/^      def valid?$/;"	f	class:RSpec.Support.MethodSignatureVerifier
 valid?	/home/vagrant/code/walletone/lib/walletone/notification.rb	/^    def valid?(secret_key, hash_type = Signer::DEFAULT_HASH_TYPE)$/;"	f	class:Walletone.Notification
-valid?	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def valid?$/;"	f	class:W1.PaymentService
 valid_action	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/diff-lcs-1.2.5/lib/diff/lcs/change.rb	/^  def self.valid_action?(action)$/;"	F	class:Diff
 valid_command?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/command_set.rb	/^    def valid_command?(val)$/;"	f	class:Pry.CommandSet.[]
 valid_digest?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/auth/digest/md5.rb	/^        def valid_digest?(auth)$/;"	f	class:Rack.Auth.Digest.MD5
@@ -17492,7 +17409,6 @@ valid_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-
 valid_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/handler/thin.rb	/^      def self.valid_options$/;"	F	class:Rack.Handler.Thin
 valid_options	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/handler/webrick.rb	/^      def self.valid_options$/;"	F	class:Rack.Handler.WEBrick
 valid_qop?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/auth/digest/md5.rb	/^        def valid_qop?(auth)$/;"	f	class:Rack.Auth.Digest.MD5
-valid_signature?	/home/vagrant/code/walletone/prototype/w1/payment_service/notify.rb	/^    def valid_signature?$/;"	f	class:W1.PaymentService
 valid_superclass?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/pry-0.10.1/lib/pry/commands/show_info.rb	/^    def valid_superclass?(code_object)$/;"	f	class:Pry.Command
 valid_test?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/matchers/built_in/exist.rb	/^          def valid_test?$/;"	f	class:RSpec.Matchers.BuiltIn.Exist.ExistenceTest
 valid_transition?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/celluloid-0.16.0/lib/celluloid/fsm.rb	/^      def valid_transition?(new_state)$/;"	f	class:Celluloid.FSM.State
@@ -17573,7 +17489,6 @@ variables	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/addressab
 variation	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/sendfile.rb	/^    def variation(env)$/;"	f	class:Rack.Sendfile
 variations_of_uri_as_strings	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/webmock-1.21.0/lib/webmock/util/uri.rb	/^      def self.variations_of_uri_as_strings(uri_object)$/;"	F	class:WebMock.Util.URI
 vegetable	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/ffaker-2.0.0/lib/ffaker/food.rb	/^    def vegetable$/;"	f	class:FFaker.Food
-vendor	/home/vagrant/code/walletone/prototype/payments_callbacks.rb	/^    def vendor$/;"	f	class:SystemAPI.prepared_params
 verb	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/expectations/handler.rb	/^      def self.verb$/;"	F	class:RSpec.Expectations.NegativeExpectationHandler
 verb	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rspec-expectations-3.2.1/lib/rspec/expectations/handler.rb	/^      def self.verb$/;"	F	class:RSpec.Expectations.PositiveExpectationHandler
 verbose	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rake-10.4.2/lib/rake/file_utils_ext.rb	/^    def verbose(value=nil)$/;"	f
@@ -17916,7 +17831,6 @@ x64_mingw_22?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bundl
 xhr?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/rack-1.6.0/lib/rack/request.rb	/^    def xhr?$/;"	f	class:Rack.Request.body.request_method.script_name=.path_info=.delete?.options?.link?.patch?.post?.put?.trace?.unlink?
 xhr?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/server/rack_adapter.rb	/^  def xhr?; (env['HTTP_X_REQUESTED_WITH'] || "").downcase == "xmlhttprequest" end$/;"	f	class:Rack
 xhr?	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/lib/yard/server/webrick_adapter.rb	/^  def xhr?; (self['X-Requested-With'] || "").downcase == 'xmlhttprequest' end$/;"	f	class:WEBrick
-xml_response	/home/vagrant/code/walletone/prototype/spec/support/api_mock_base.rb	/^    def xml_response(response_code, params=nil)$/;"	f	class:ApiMockBase
 xml_scanner	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/coderay-1.1.0/lib/coderay/scanners/java_script.rb	/^    def xml_scanner$/;"	f	class:CodeRay.Scanners.JavaScript
 xorshift	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/thread_safe-0.3.5/lib/thread_safe/util/xor_shift_random.rb	/^        def xorshift(x)$/;"	f	class:ThreadSafe.Util.XorShiftRandom
 xyz	/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/yard-0.8.7.6/spec/templates/module_spec.rb	/^        def xyz; end$/;"	f	class:Foo

@@ -1,4 +1,3 @@
-require 'walletone/signer'
 # Базовый класс для полей формы и уведомления
 #
 module Walletone
@@ -6,7 +5,7 @@ module Walletone
     # http://www.walletone.com/ru/merchant/documentation/#step2
     #
     #
-    W1_KEYS = %(
+    W1_KEYS = %i(
         WMI_MERCHANT_ID
         WMI_PAYMENT_AMOUNT
         WMI_CURRENCY_ID
@@ -26,7 +25,7 @@ module Walletone
         WMI_PSP_MERCHANT_ID
     )
 
-    MULTIPLE_VALUES = %(WMI_PTENABLED WMI_PTDISABLED)
+    MULTIPLE_VALUES = %i(WMI_PTENABLED WMI_PTDISABLED)
 
     # Определяем методы для прямого доступа
     # > payment.WMI_MERCHANT_ID
@@ -35,34 +34,48 @@ module Walletone
     # > payment.WMI_PTENABLED = 
     W1_KEYS.each do |k|
       define_method k do
-        self[k]
+        fetch k
       end
 
-      define_method k+'=' do |value|
+      define_method "#{k}=" do |value|
         self[k]= value
       end
     end
 
-    def as_list
-      map.inject([]) do |acc, kv|
-        name, value = kv
+    def initialize attrs={}
+      fields = super
+      return fields if attrs.empty?
+      symbolyzed_attrs = attrs.inject({}) { |acc, e| acc[e.first.to_sym]=e.last; acc }
+      fields.merge! symbolyzed_attrs
+    end
 
-        if value.is_a?(Array)
-          value.each do |k, v|
-            acc << [k.to_s, v]
-          end
-        else
-          acc << [name.to_s, value]
-        end
+    def [] key
+      fetch key.to_sym, nil
+    end
+
+    def []= key, value
+      super key.to_sym, value
+    end
+
+    def fetch key, default=nil
+      super key.to_sym, default
+    end
+
+    def as_list
+      keys.inject([]) do |acc, name|
+        # Делаем именно так, чтобы работало переопределение методов
+        # в Payment
+        value = respond_to?(name) ? send(name) : fetch(name)
+        Array(value).each { |v| acc << [name.to_s, v.to_s] }
+        acc
       end
     end
 
     private
 
     def signer
-      @signer ||= Signer.new fields: self
+      Signer.new fields: self
     end
-
 
   end
 end

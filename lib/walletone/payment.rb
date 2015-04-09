@@ -1,4 +1,5 @@
 require 'walletone/fields'
+require 'walletone/signer'
 require 'base64'
 require 'time'
 
@@ -17,7 +18,7 @@ module Walletone
     end
 
     def signed?
-      self.WMI_SIGNATURE.present?
+      self.WMI_SIGNATURE.is_a?(String) && ! self.WMI_SIGNATURE.empty?
     end
 
     def WMI_CURRENCY_ID

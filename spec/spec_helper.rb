@@ -1,6 +1,9 @@
 require 'walletone'
 require 'fabrication'
 require 'ffaker'
+require 'pry'
+
+Dir["./spec/support/**/*.rb"].sort.each { |f| require f}
 
 RSpec.configure do |config|
   config.order = :random
