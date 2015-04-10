@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.test_files = Dir.glob("spec/**/*")
 
-  s.add_dependency 'virtus', '~> 1.0.5'
+  s.add_dependency 'virtus', '~> 1.0'
   s.add_dependency 'rack',   '~> 1.6'
 
   s.add_development_dependency 'rake'
