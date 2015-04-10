@@ -96,7 +96,7 @@ form = payment.form
 %h5 В течение 5-и секунд вы будете переправлены на страницу оплаты.
 = form_tag form.checkout_url, form.options.merge(data: {autosubmit: true}) do |f|
   = raw form.hidden_fields_tags
-  = submit_tag 'Перейти к оплате', 
+  = button_tag 'Перейти к оплате', 
     :class=>'btn btn-primary',
     :data =>{:disable_with => 'Переправляю на сайт оплаты..'}
 
@@ -105,6 +105,12 @@ form = payment.form
   # пользователя
   $ -> $('[data-autosubmit]').submit()
 ```
+
+# Подсказки
+
+Не используйте в форме кнопку `submit` с установленным `value` и `name`, потому что в
+таком случае ее значение на сервер придет в параметрах и его тоже придется
+включать в подписываемые поля.
 
 # Прочие ссылки
 
