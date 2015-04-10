@@ -33,4 +33,10 @@ describe Walletone::Notification do
       expect( subject.valid?(secret) ).to be_truthy
     end
   end
+
+  context '#accepted?' do
+    it do
+      expect( subject).to be_accepted
+    end
+  end
 end

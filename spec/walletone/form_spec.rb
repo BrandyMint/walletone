@@ -1,9 +1,9 @@
 require 'walletone/form'
 
 describe Walletone::Form do
-  let(:payment) { Fabricate :payment }
+  let(:payment) { Fabricate( :payment ).sign! 'somekey' }
 
-  subject { described_class.new payment: payment }
+  subject { described_class.new payment }
 
   describe '#checkout_url' do
     it { expect(subject.checkout_url).to eq Walletone.config.web_checkout_url }

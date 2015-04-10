@@ -1,4 +1,4 @@
 pkg
 Gemfile.lock
-tags
+*tags
 *.gem

@@ -19,17 +19,17 @@ Gem::Specification.new do |s|
   s.test_files = Dir.glob("spec/**/*")
 
   s.add_dependency 'virtus', '~> 1.0'
-  s.add_dependency 'rack',   '~> 1.6'
+  s.add_dependency 'rack',   '~> 1.5'
 
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec', '~> 3.2.0'
-  s.add_development_dependency 'ffaker', '>= 2.0.0'
-  s.add_development_dependency 'fabrication', '~> 2.12.2'
-  s.add_development_dependency "pry"
-  s.add_development_dependency "pry-nav"
-  s.add_development_dependency "webmock"
-  s.add_development_dependency "guard"
-  s.add_development_dependency "guard-rspec"
-  s.add_development_dependency 'guard-ctags-bundler'
-  s.add_development_dependency 'yard'
+  s.add_development_dependency 'rake', '~> 0'
+  s.add_development_dependency 'rspec', '~> 3.2', '>= 3.2.0'
+  s.add_development_dependency 'ffaker', '~> 2.0', '>= 2.0.0'
+  s.add_development_dependency 'fabrication', '~> 2.12', '>= 2.12'
+  s.add_development_dependency "pry", '~> 0'
+  s.add_development_dependency "pry-nav", '~> 0'
+  s.add_development_dependency "webmock", '~> 0'
+  s.add_development_dependency "guard", '~> 0'
+  s.add_development_dependency "guard-rspec", '~> 0'
+  s.add_development_dependency 'guard-ctags-bundler', '~> 0'
+  s.add_development_dependency 'yard', '~> 0'
 end

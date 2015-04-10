@@ -3,7 +3,7 @@ require 'walletone/fields'
 describe Walletone::Fields do
 
   describe 'Именованные поля' do
-    subject { described_class.new }
+    subject { Walletone::Payment.new }
     let(:merchant_id) { 'some_id' }
 
     it 'nill by default' do
@@ -22,7 +22,7 @@ describe Walletone::Fields do
   describe '#initialize' do
     let(:fail_url) { 'someurl' }
     let(:attrs)   { { 'WMI_FAIL_URL' => fail_url } }
-    subject { described_class.new attrs }
+    subject { Walletone::Payment.new attrs }
 
     it { expect(subject.WMI_FAIL_URL).to eq fail_url }
     it { expect(subject['WMI_FAIL_URL']).to eq fail_url }

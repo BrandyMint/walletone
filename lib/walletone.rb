@@ -38,6 +38,11 @@ module Walletone
     config.error_notifier.send self.config.error_notify_method, error, *args
   end
 
+  def self.raise_error error
+    notify_error error
+    fail error
+  end
+
   def self.config
     Configuration.instance
   end

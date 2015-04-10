@@ -17,9 +17,13 @@
 wm = Walletone::Middleware::Callback.new do |notify, env|
   # notify is a Walletone::Notification instance
 
-  raise 'Wrong sign' unless notify.valid? W1_SECRET_KEY
+  raise 'WARNING! Wrong signature!' unless notify.valid? W1_SECRET_KEY
 
-  # TODO something with notify
+  if notify.accepted?
+    # Successful payed. Deliver your goods to the client
+  else
+    # Payment is failed. Notify you client.
+  end
 
   'Return some message for OK response'
 end
@@ -73,13 +77,14 @@ payment = Walletone::Payment.new(
     SOME_CUSTOM_FIELD:  'value'
     # etc любые другие поля
 )
+payment.sign! 'you secret key'
+form = payment.form
 ```
 
 
 ### Собственно генераця формы
 
 ```haml
-- form = Walletone::Form.new payment
 
 %h5 В течение 5-и секунд вы будете переправлены на страницу оплаты.
 = form_tag form.checkout_url, form.options.merge(data: {autosubmit: true}) do |f|
@@ -98,6 +103,9 @@ payment = Walletone::Payment.new(
 
 1. [Walletone Open API](https://api.w1.ru/OpenApi/)
 2. [Документация (API)](http://www.walletone.com/ru/merchant/documentation/)
+
+Sponsored by http://taaasty.com and http://kiiiosk.ru
+Developers are http://brandymint.com
 
 ---
 
