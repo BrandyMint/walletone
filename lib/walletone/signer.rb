@@ -34,7 +34,7 @@ module Walletone
     def sorted_values
       fields
         .as_list
-        .reject { |k, v| k == WMI_SIGNATURE }
+        .reject { |f| f.first == WMI_SIGNATURE }
         .sort { |a, b|  [ a[0], a[1] ] <=> [ b[0], b[1] ] }
         .map(&:last)
         .map(&:to_s)
