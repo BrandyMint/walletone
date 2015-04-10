@@ -95,7 +95,7 @@ form = payment.form
 
 %h5 В течение 5-и секунд вы будете переправлены на страницу оплаты.
 = form_tag form.checkout_url, form.options.merge(data: {autosubmit: true}) do |f|
-  = form.hidden_fields_tags
+  = raw form.hidden_fields_tags
   = submit_tag 'Перейти к оплате', 
     :class=>'btn btn-primary',
     :data =>{:disable_with => 'Переправляю на сайт оплаты..'}
