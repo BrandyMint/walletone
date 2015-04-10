@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/BrandyMint/walletone.svg)](https://travis-ci.org/BrandyMint/walletone)
 [![Code Climate](https://codeclimate.com/github/BrandyMint/walletone/badges/gpa.svg)](https://codeclimate.com/github/BrandyMint/walletone)
+[![Test
+Coverage](https://codeclimate.com/github/BrandyMint/walletone/badges/coverage.svg)](https://codeclimate.com/github/BrandyMint/walletone)
 
 ---
 
