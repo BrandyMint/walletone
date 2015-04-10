@@ -1,3 +1,5 @@
+require 'walletone/form'
+
 describe Walletone::Payment do
   let(:merchant_id) { 127830694690 }
   let(:secret_key) { '3475706857624f46344e573753316e387c396e5f4b54767b796c4c' }
@@ -31,7 +33,12 @@ describe Walletone::Payment do
 
     it { expect(subject).to be_frozen }
     it { expect(subject).to be_signed }
+    it { expect(subject).to be_valid }
     it { expect(subject.WMI_SIGNATURE).to eq signature }
+
+    it '#form' do
+      expect(subject.form).to be_a Walletone::Form
+    end
 
   end
 

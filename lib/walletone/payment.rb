@@ -55,7 +55,7 @@ module Walletone
 
     # Form generation shortcut
     def form
-      Form.new self
+      Walletone::Form.new self
     end
 
     def WMI_CURRENCY_ID

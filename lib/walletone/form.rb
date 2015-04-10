@@ -1,10 +1,11 @@
 require 'cgi'
+require 'walletone/payment'
 module Walletone
   class Form
     attr_reader :payment
 
     def initialize payment
-      unless payment.is_a?( Payment ) && payment.valid? && payment.signed?
+      unless payment.is_a?( Walletone::Payment ) && payment.valid? && payment.signed?
         Walletone.raise_error ArgumentError.new("Must be valid and signed Payment #{payment}")
       end
       @payment = payment
