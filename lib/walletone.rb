@@ -1,11 +1,9 @@
 require 'logger'
 require 'virtus'
 
-require 'walletone/errors/walletone_error'
-require 'walletone/errors/bad_url_error'
-
 require 'walletone/payment'
 require 'walletone/notification'
+require 'walletone/form'
 require 'walletone/middleware/base'
 
 module Walletone
