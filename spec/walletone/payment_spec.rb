@@ -4,7 +4,11 @@ describe Walletone::Payment do
   let(:merchant_id) { 127830694690 }
   let(:secret_key) { '3475706857624f46344e573753316e387c396e5f4b54767b796c4c' }
 
-  subject { described_class.new fields }
+  before do
+    described_class.encode_description = true
+  end
+
+  subject { described_class.new( fields ) }
 
   context '.new' do
     let(:fields) { Walletone::Fields.new WMI_MERCHANT_ID: merchant_id }

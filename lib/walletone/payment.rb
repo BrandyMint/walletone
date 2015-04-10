@@ -10,6 +10,11 @@ module Walletone
     # http://www.walletone.com/ru/merchant/documentation/#step2
     #
     #
+    class << self
+      attr_accessor :encode_description
+    end
+
+    DESCRIPTION_TRUNCATE_LENGTH = 250
     FIELDS = %i(
         WMI_MERCHANT_ID
         WMI_PAYMENT_NO
@@ -69,7 +74,13 @@ module Walletone
 
     def WMI_DESCRIPTION
       value = fetch :WMI_DESCRIPTION
-      "BASE64:#{Base64.encode64(value[0...250])[0..-2]}" if value
+      return value unless value
+      if self.class.encode_description
+        # TODO энкодить автоматически, если встречаются национальные символы
+        "BASE64:#{Base64.encode64(value[0...250])[0..-2]}"
+      else
+        value.slice 0, DESCRIPTION_TRUNCATE_LENGTH
+      end
     end
 
     def WMI_EXPIRED_DATE
