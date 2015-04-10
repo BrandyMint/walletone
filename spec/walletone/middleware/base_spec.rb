@@ -4,7 +4,7 @@ require 'walletone/middleware/base'
 describe Walletone::Middleware::Base do
   let(:middleware) { described_class.new }
   let!(:params) { { cp1251: 'привет'.encode('windows-1251') } }
-  subject! { Rack::MockRequest.new(middleware).post('/', params: params ) }
+  subject { Rack::MockRequest.new(middleware).post('/', params: params ) }
 
   it do
     expect(subject.status).to eq 200

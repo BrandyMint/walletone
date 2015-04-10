@@ -5,9 +5,12 @@ describe Walletone do
     end
   end
 
+  #let(:notifier) { notifier = Class.new; def notifier.notify *args; end }
+  let(:notifier) { double }
+
   describe 'Использует Bugsnag если он есть' do
     before do
-      ::Bugsnag = double
+      ::Bugsnag = notifier
       # Сбрасываем конфигурацию, чтобы она еще раз создалась
       Walletone::Configuration.instance_variable_set('@singleton__instance__',nil)
     end
@@ -17,7 +20,7 @@ describe Walletone do
     end
 
     after do
-      ::Bugsnag = nil
+      Object.send(:remove_const, :Bugsnag)
     end
   end
 
