@@ -118,6 +118,7 @@ form = payment.form
 
 1. [Walletone Open API](https://api.w1.ru/OpenApi/)
 2. [Документация (API)](http://www.walletone.com/ru/merchant/documentation/)
+3. [Доставка redexpress](http://www.walletone.com/en/merchant/delivery/about/)
 
 Sponsored by http://taaasty.com and http://kiiiosk.ru
 Developers are http://brandymint.com
