@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'virtus', '~> 1.0'
   s.add_dependency 'rack',   '~> 1.5'
 
+  s.add_runtime_dependency 'faraday'
   s.add_development_dependency 'rake', '>= 10.4.0'
   s.add_development_dependency 'rspec', '>= 3.2.0'
   s.add_development_dependency 'ffaker', '>= 2.0.0'

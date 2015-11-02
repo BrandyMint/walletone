@@ -119,6 +119,9 @@ form = payment.form
 1. [Walletone Open API](https://api.w1.ru/OpenApi/)
 2. [Документация (API)](http://www.walletone.com/ru/merchant/documentation/)
 3. [Доставка redexpress](http://www.walletone.com/en/merchant/delivery/about/)
+4. [Рекуренты](https://docs.google.com/document/d/1_1HponT9Xv5dJ10Lqh23JyNGhqhNq9myb4xXl-gUOCI/pub?embedded=true)
+5.
+[InvoicingAPI](https://docs.google.com/document/d/18YaYbAwHo5jKCx88ox3okj1RJqcPF_2gSDdzpK2XHDI/pub?embedded=true)
 
 Sponsored by http://taaasty.com and http://kiiiosk.ru
 Developers are http://brandymint.com

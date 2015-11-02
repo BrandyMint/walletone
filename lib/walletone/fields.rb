@@ -7,7 +7,7 @@ module Walletone
       # > payment.WMI_MERCHANT_ID
       # > payment.WMI_MERCHANT_ID=123
       #
-      # > payment.WMI_PTENABLED = 
+      # > payment.WMI_PTENABLED =
       fields.each do |k|
         define_method k do
           fetch k
@@ -46,6 +46,10 @@ module Walletone
         Array(value).each { |v| acc << [name.to_s, v.to_s] }
         acc
       end
+    end
+
+    def to_s
+      as_list.to_s
     end
 
     private

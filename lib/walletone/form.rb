@@ -11,6 +11,14 @@ module Walletone
       @payment = payment
     end
 
+    def to_s
+      payment.to_s
+    end
+
+    def as_list
+      payment.as_list
+    end
+
     def checkout_url
       Walletone.config.web_checkout_url
     end
@@ -32,6 +40,5 @@ module Walletone
     def hidden_field_tag name, value
       "<input name=\"#{CGI.escapeHTML(name.to_s)}\" type=\"hidden\" value=\"#{CGI.escapeHTML(value.to_s)}\" />"
     end
-
   end
 end

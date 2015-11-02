@@ -12,15 +12,19 @@ module Walletone
 
     attribute :fields,     Walletone::Fields, requried: true
 
-    def signature secret_key, hash_type=DEFAULT_HASH_TYPE
+    def self.sign(content, hash_type)
       case hash_type
       when :md5
-        Digest::MD5.base64digest( fields_as_string( secret_key ) )
+        Digest::MD5.base64digest content
       when :sha1
-        Digest::SHA1.base64digest( fields_as_string( secret_key ) )
+        Digest::SHA1.base64digest content
       else
         raise ArgumentError, hash_type
       end
+    end
+
+    def signature secret_key, hash_type=DEFAULT_HASH_TYPE
+      self.class.sign fields_as_string( secret_key ), hash_type
     end
 
     private
