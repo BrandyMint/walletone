@@ -3,6 +3,8 @@ require 'fabrication'
 require 'ffaker'
 require 'pry'
 require "codeclimate-test-reporter"
+require 'webmock/rspec'
+
 CodeClimate::TestReporter.start
 
 Dir["./spec/support/**/*.rb"].sort.each { |f| require f}

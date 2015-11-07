@@ -22,13 +22,16 @@ Gem::Specification.new do |s|
   s.add_dependency 'rack',   '~> 1.5'
 
   s.add_runtime_dependency 'faraday'
+  s.add_runtime_dependency 'money'
+
+  s.add_development_dependency 'multi_json', '>= 1.3.2'
+  s.add_development_dependency 'webmock', '>= 1.22'
   s.add_development_dependency 'rake', '>= 10.4.0'
   s.add_development_dependency 'rspec', '>= 3.2.0'
   s.add_development_dependency 'ffaker', '>= 2.0.0'
   s.add_development_dependency 'fabrication', '>= 2.12'
   s.add_development_dependency "pry", '~> 0'
   s.add_development_dependency "pry-nav", '~> 0'
-  s.add_development_dependency "webmock", '>= 1.21'
   s.add_development_dependency "guard", '>= 2.12'
   s.add_development_dependency "guard-rspec", '>= 4.5.0'
   s.add_development_dependency 'guard-ctags-bundler', '>= 1.4.0'

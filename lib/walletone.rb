@@ -6,6 +6,7 @@ require 'walletone/notification'
 require 'walletone/form'
 require 'walletone/middleware/base'
 require 'walletone/recurrent'
+require 'walletone/error_response'
 
 module Walletone
   API_URL          = 'https://api.w1.ru/OpenApi/'

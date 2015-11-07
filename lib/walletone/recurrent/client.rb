@@ -10,7 +10,7 @@ class Walletone::Recurrent::Client
     @customer_id = customer_id.to_s
     @secret_key  = secret_key.to_s
     @hash_type   = hash_type
-    @timestamp   = Time.now.strftime('%FT%T')
+    @timestamp   = Time.now.utc.strftime('%FT%T')
   end
 
   def create_invoice(invoice)
@@ -42,8 +42,5 @@ class Walletone::Recurrent::Client
 
   def signature body
     Walletone::Signer.sign [merchant_id, customer_id, timestamp, body, secret_key].join, hash_type
-  end
-
-  def client
   end
 end
