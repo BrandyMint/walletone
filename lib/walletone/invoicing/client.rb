@@ -1,12 +1,12 @@
 require 'money'
 require 'multi_json'
 
-# https://docs.google.com/document/d/18YaYbAwHo5jKCx88ox3okj1RJqcPF_2gSDdzpK2XHDI/pub?embedded=true#h.m24dtbijqng
+# Invoicing: https://docs.google.com/document/d/18YaYbAwHo5jKCx88ox3okj1RJqcPF_2gSDdzpK2XHDI/pub?embedded=true
+# Recurrent: https://docs.google.com/document/d/1_1HponT9Xv5dJ10Lqh23JyNGhqhNq9myb4xXl-gUOCI/pub?embedded=true
 #
 module Walletone::Invoicing
   class Client
     CABINET_ID      = 'checkout' # yessplaycheckout
-    REQUEST_TIMEOUT = 1
     OPERATORS       =  %w(MtsRUB MegafonRUB Tele2RUB BeelineRUB)
 
     BASE_URL = "https://wl.walletone.com/#{CABINET_ID}/invoicingapi/"
@@ -20,34 +20,40 @@ module Walletone::Invoicing
     end
 
     def do_phone_payment(amount:, order_id:, phone: ,additional_params:)
-      invoice = make_invoice(amount: amount, order_id: order_id, additional_params: additional_params)
-      result = make_payments_process payment_id: invoice['Invoice']['Payment']['PaymentId'], phone: phone
+      invoice = make_invoice amount: amount, order_id: order_id, additional_params: additional_params
+      result = make_payments_process_with_phone payment_id: invoice['Invoice']['Payment']['PaymentId'], phone: phone
     end
 
-    def make_payments_process(payment_id:, customer_id: nil, phone:)
+    # Для рекурентов
+    # {
+    # "CustomerId":"123456",
+    # "UseSavedAuthData":true,
+    # "CreditCardTerminal":Non3Ds,
+    # "AuthData": [
+    #            "RecurrentCreditCardAuthSecurityCode":"123"
+    # ]
+    # }
+
+    def make_payments_process(payment_id, params = {})
       fail 'must be payment_id' unless payment_id
-      fail 'must be phone' unless phone
-      body = {
-        'AuthData'     => { 'MobileCommercePhoneNumber' => phone }
-        # 'SaveAuthData' => false,
-      }
-      body['CustomerId'] = customer_id.to_s if customer_id
-      make_request "payments/#{payment_id}/process", body.to_json
+      make_request "payments/#{payment_id}/process", params.to_json
     end
 
-    #  MtsRUB, MegafonRUB, Tele2RUB, BeelineRUB
-    def make_invoice(amount:, order_id:, payment_type_id: 'MtsRUB', additional_params: {})
-      fail 'amount must be a Money' unless amount.is_a?(Money)
-      fail 'order_id must be' unless order_id
+    def make_payments_process_with_phone(payment_id:, customer_id:, phone:)
+      make_payments_process payment_id, { 'CustomerId' => customer_id, 'AuthData' => { 'MobileCommercePhoneNumber' => phone } }
+    end
+
+    def make_invoice(invoice)
+      fail 'Must be a RecurrentInvoice' unless invoice.is_a? Walletone::Recurrent::Invoice
 
       body = {
-        'OrderId'       => order_id.to_s,
-        'Amount'        => amount.to_f,
-        'CurrencyId'    => amount.currency.iso_numeric.to_i,
-        'PaymentTypeId' => payment_type_id
+        'OrderId'       => invoice.OrderId.to_s,
+        'Amount'        => invoice.Amount.to_f,
+        'CurrencyId'    => invoice.CurrencyId,
+        'PaymentTypeId' => invoice.PaymentTypeId
       }
 
-      body['InvoiceAdditionalParams'] = additional_params if additional_params.is_a?(Hash) && !additional_params.empty?
+      body['InvoiceAdditionalParams'] = invoice.InvoiceAdditionalParams if invoice.InvoiceAdditionalParams.is_a?(Hash) && !invoice.InvoiceAdditionalParams.empty?
 
       make_request 'invoices', body.to_json
     end

@@ -6,6 +6,7 @@ require 'walletone/notification'
 require 'walletone/form'
 require 'walletone/middleware/base'
 require 'walletone/recurrent'
+require 'walletone/invoicing'
 require 'walletone/error_response'
 
 module Walletone
