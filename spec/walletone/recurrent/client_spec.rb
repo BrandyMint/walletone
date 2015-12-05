@@ -16,17 +16,19 @@ describe Walletone::Recurrent::Client do
   let(:invoice) { Walletone::Recurrent::Invoice.new Amount: 123, OrderId: 456 }
 
   context '#create_invoice' do
-    it do
-      res = client.create_invoice invoice
-      expect(res).to eq 'aaa'
-    end
+    pending
+    #it do
+    #res = client.create_invoice invoice
+    #expect(res).to eq 'aaa'
+    #end
   end
 
   context '#make_payment' do
     let(:payment_id) { 123 }
-    it do
-      res = client.make_payment payment_id
-      expect(res).to eq 'aaa'
-    end
+    pending
+    #it do
+    #res = client.make_payment payment_id
+    #expect(res).to eq 'aaa'
+    #end
   end
 end
