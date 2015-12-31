@@ -7,7 +7,7 @@ require 'multi_json'
 module Walletone::Invoicing
   class Client
     CABINET_ID      = 'checkout' # yessplaycheckout
-    OPERATORS       =  %w(MtsRUB MegafonRUB Tele2RUB BeelineRUB)
+    OPERATORS       = %w(MtsRUB MegafonRUB Tele2RUB BeelineRUB)
 
     BASE_URL = "https://wl.walletone.com/#{CABINET_ID}/invoicingapi/"
 
@@ -19,7 +19,7 @@ module Walletone::Invoicing
       @timestamp  = Time.now.utc.strftime('%FT%T')
     end
 
-    def do_phone_payment(amount:, order_id:, phone: ,additional_params:)
+    def do_phone_payment(amount:, order_id:, phone:, additional_params:)
       invoice = make_invoice amount: amount, order_id: order_id, additional_params: additional_params
       make_payments_process_with_phone payment_id: invoice['Invoice']['Payment']['PaymentId'], phone: phone
     end
@@ -40,7 +40,7 @@ module Walletone::Invoicing
     end
 
     def make_payments_process_with_phone(payment_id:, customer_id:, phone:)
-      make_payments_process payment_id, { 'CustomerId' => customer_id, 'AuthData' => { 'MobileCommercePhoneNumber' => phone } }
+      make_payments_process payment_id, 'CustomerId' => customer_id, 'AuthData' => { 'MobileCommercePhoneNumber' => phone }
     end
 
     def make_invoice(invoice)
@@ -83,7 +83,7 @@ module Walletone::Invoicing
       Net::HTTP.start uri.host, uri.port, use_ssl: true, verify_mode: OpenSSL::SSL::VERIFY_NONE # OpenSSL::SSL::VERIFY_PEER
     end
 
-    def signature url, body
+    def signature(url, body)
       Walletone::Signer.sign [url, user_id, timestamp, body, secret_key].join, hash_type
     end
 

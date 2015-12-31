@@ -19,7 +19,7 @@ module Walletone::Middleware
 
     def call(env)
       logger.info 'Middleware start'
-      request  = Rack::Request.new env
+      request = Rack::Request.new env
       encoded_params = from_cp1251_to_utf8 request.params
 
       logger.info "Middleware parameters is #{encoded_params}"
@@ -44,8 +44,8 @@ module Walletone::Middleware
       Walletone.logger
     end
 
-    def perform notify, env
-      raise 'Walletone middleware perform method is not implemented'
+    def perform(_notify, _env)
+      fail 'Walletone middleware perform method is not implemented'
     end
 
     def make_response(result, description)
@@ -61,7 +61,7 @@ module Walletone::Middleware
     # приводим в uft-8
     def from_cp1251_to_utf8(params)
       params.map do |k, v|
-        [k, v.force_encoding("cp1251").encode("utf-8", undef: :replace)]
+        [k, v.force_encoding('cp1251').encode('utf-8', undef: :replace)]
       end
     end
   end

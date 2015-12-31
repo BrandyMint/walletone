@@ -19,17 +19,17 @@ module Walletone
       when :sha1
         Digest::SHA1.base64digest content
       else
-        raise ArgumentError, hash_type
+        fail ArgumentError, hash_type
       end
     end
 
-    def signature secret_key, hash_type=DEFAULT_HASH_TYPE
-      self.class.sign fields_as_string( secret_key ), hash_type
+    def signature(secret_key, hash_type = DEFAULT_HASH_TYPE)
+      self.class.sign fields_as_string(secret_key), hash_type
     end
 
     private
 
-    def fields_as_string secret_key
+    def fields_as_string(secret_key)
       [sorted_values, secret_key].join.encode('cp1251')
     end
 
@@ -39,11 +39,10 @@ module Walletone
       fields
         .as_list
         .reject { |f| f.first == WMI_SIGNATURE }
-        .sort { |a, b|  [ a[0], a[1] ] <=> [ b[0], b[1] ] }
+        .sort { |a, b| [a[0], a[1]] <=> [b[0], b[1]] }
         .map(&:last)
         .map(&:to_s)
         .compact
     end
-
   end
 end

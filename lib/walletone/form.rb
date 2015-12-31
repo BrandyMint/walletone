@@ -4,8 +4,8 @@ module Walletone
   class Form
     attr_reader :payment
 
-    def initialize payment
-      unless payment.is_a?( Walletone::Payment ) && payment.valid? && payment.signed?
+    def initialize(payment)
+      unless payment.is_a?(Walletone::Payment) && payment.valid? && payment.signed?
         Walletone.raise_error ArgumentError.new("Must be valid and signed Payment #{payment}")
       end
       @payment = payment
@@ -37,7 +37,7 @@ module Walletone
 
     private
 
-    def hidden_field_tag name, value
+    def hidden_field_tag(name, value)
       "<input name=\"#{CGI.escapeHTML(name.to_s)}\" type=\"hidden\" value=\"#{CGI.escapeHTML(value.to_s)}\" />"
     end
   end

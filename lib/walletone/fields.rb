@@ -2,7 +2,7 @@
 #
 module Walletone
   class Fields < Hash
-    def self.define_fields fields
+    def self.define_fields(fields)
       # Определяем методы для прямого доступа
       # > payment.WMI_MERCHANT_ID
       # > payment.WMI_MERCHANT_ID=123
@@ -14,27 +14,27 @@ module Walletone
         end
 
         define_method "#{k}=" do |value|
-          self[k]= value
+          self[k] = value
         end
       end
     end
 
-    def initialize attrs={}
+    def initialize(attrs = {})
       fields = super
       return fields if attrs.empty?
-      symbolyzed_attrs = attrs.inject({}) { |acc, e| acc[e.first.to_sym]=e.last; acc }
+      symbolyzed_attrs = attrs.inject({}) { |acc, e| acc[e.first.to_sym] = e.last; acc }
       fields.merge! symbolyzed_attrs
     end
 
-    def [] key
+    def [](key)
       fetch key.to_sym, nil
     end
 
-    def []= key, value
+    def []=(key, value)
       super key.to_sym, value
     end
 
-    def fetch key, default=nil
+    def fetch(key, default = nil)
       super key.to_sym, default
     end
 
@@ -57,6 +57,5 @@ module Walletone
     def signer
       Signer.new fields: self
     end
-
   end
 end

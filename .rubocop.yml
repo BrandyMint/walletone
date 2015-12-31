@@ -1,0 +1,20 @@
+# This is the configuration used to check the rubocop source code.
+# https://github.com/bbatsov/rubocop/issues/1633
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/AlignParameters:
+  Enabled: false
+  EnforcedStyle: with_fixed_indentation
+  SupportedStyles:
+    - with_first_parameter
+    - with_fixed_indentation
+
+Style/Encoding:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 10000

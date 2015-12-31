@@ -10,7 +10,7 @@ require 'walletone/invoicing'
 require 'walletone/error_response'
 
 module Walletone
-  API_URL          = 'https://api.w1.ru/OpenApi/'
+  API_URL = 'https://api.w1.ru/OpenApi/'
   V1_CHECKOUT_URL = 'https://www.walletone.com/checkout/default.aspx'
   V2_CHECKOUT_URL = 'https://wl.walletone.com/checkout/checkout/Index'
 
@@ -33,13 +33,13 @@ module Walletone
     end
   end
 
-  def self.notify_error error, *args
+  def self.notify_error(error, *args)
     logger.error "Catch error #{error}"
     return unless config.error_notifier
-    config.error_notifier.send self.config.error_notify_method, error, *args
+    config.error_notifier.send config.error_notify_method, error, *args
   end
 
-  def self.raise_error error
+  def self.raise_error(error)
     notify_error error
     fail error
   end

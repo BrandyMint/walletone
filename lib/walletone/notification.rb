@@ -38,15 +38,15 @@ module Walletone
 
     define_fields FIELDS
 
-    def initialize params
-      super( params ).freeze
+    def initialize(params)
+      super(params).freeze
     end
 
     # Обязательно проверяем валидость уведомления, вдруг его
     # прислал злоумышленник.
     #
     def valid?(secret_key, hash_type = Signer::DEFAULT_HASH_TYPE)
-      self.WMI_SIGNATURE == signer.signature( secret_key, hash_type )
+      self.WMI_SIGNATURE == signer.signature(secret_key, hash_type)
     end
 
     # Принята оплата или не прошла?
@@ -54,6 +54,5 @@ module Walletone
     def accepted?
       self['WMI_ORDER_STATE'].to_s.upcase == 'ACCEPTED'
     end
-
   end
 end

@@ -1,7 +1,7 @@
 require 'walletone/invoicing'
 
 describe Walletone::Invoicing::Client do
-  let(:user_id) { 127830694600 }
+  let(:user_id) { 127_830_694_600 }
   let(:secret_key) { 'abc' }
   let(:amount) { Money.new 1000, 'rub' }
   let(:order_id) { '123' }

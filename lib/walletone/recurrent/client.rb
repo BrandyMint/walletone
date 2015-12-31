@@ -37,7 +37,7 @@ module Walletone::Recurrent
 
     attr_reader :merchant_id, :customer_id, :secret_key, :hash_type, :timestamp, :hash_type
 
-    def do_request url, body
+    def do_request(url, body)
       uri = URI.parse url
 
       req = Net::HTTP::Post.new uri, build_headers(url, body)
@@ -69,7 +69,7 @@ module Walletone::Recurrent
       Walletone.logger.info "Recurrent::Client: #{message}"
     end
 
-    def signature url, body
+    def signature(url, body)
       Walletone::Signer.sign [url, merchant_id, timestamp, body, secret_key].join, hash_type
     end
   end

@@ -1,7 +1,7 @@
 require 'walletone/form'
 
 describe Walletone::Form do
-  let(:payment) { Fabricate( :payment ).sign! 'somekey' }
+  let(:payment) { Fabricate(:payment).sign! 'somekey' }
 
   subject { described_class.new payment }
 
@@ -16,5 +16,4 @@ describe Walletone::Form do
   describe '#options' do
     it { expect(subject.options).to be_a Hash }
   end
-
 end
