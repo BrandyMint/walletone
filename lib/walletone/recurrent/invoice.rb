@@ -7,5 +7,9 @@ module Walletone::Recurrent
     attribute :CurrencyId,              Integer, required: true, default: 643 # rub
     attribute :PaymentTypeId,           String,  required: true, default: 'CreditCardRUB' #  MtsRUB, MegafonRUB, Tele2RUB, BeelineRUB
     attribute :InvoiceAdditionalParams, Hash
+
+    def to_json
+      to_h.to_json
+    end
   end
 end

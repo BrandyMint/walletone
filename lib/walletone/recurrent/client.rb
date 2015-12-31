@@ -1,8 +1,13 @@
 require 'faraday'
 
 module Walletone::Recurrent
+  require 'walletone/recurrent/invoice'
+  require 'walletone/recurrent/result_invoice'
+
   class Client
-    RECURRENT_API = 'https://wl.walletone.com/checkout/invoicingapi/'
+    RECURRENT_API        = 'https://wl.walletone.com/checkout/invoicingapi/'
+    INVOICE_CLASS        = Walletone::Recurrent::Invoice
+    RESULT_INVOICE_CLASS = Walletone::Recurrent::ResultInvoice
 
     # @param [merchant_id]
     #
@@ -15,13 +20,15 @@ module Walletone::Recurrent
     end
 
     def create_invoice(invoice)
-      fail 'Must be a RecurrentInvoice' unless invoice.is_a? Walletone::Recurrent::Invoice
+      fail "Must be a #{INVOICE_CLASS} (#{invoice})" unless invoice.is_a? INVOICE_CLASS
 
-      do_request RECURRENT_API + 'invoices', invoice.to_json
+      result = do_request RECURRENT_API + 'invoices', invoice.to_json
+
+      RESULT_INVOICE_CLASS.new result
     end
 
-    def make_payment(payment_id)
-      body = { CustomerId: customer_id, UseSavedAuthData: 'true', CreditCardTerminal: 'Non3Ds' }.to_json
+    def make_payment(payment_id: nil, email: nil)
+      body = { CustomerId: customer_id, CreditCardTerminal: 'Non3Ds', UseSavedAuthData: 'true', AuthData: { RecurrentCreditCardEmail: email } }.to_json
 
       do_request RECURRENT_API + "payments/#{payment_id}/process", body
     end
@@ -33,7 +40,7 @@ module Walletone::Recurrent
     def do_request url, body
       uri = URI.parse url
 
-      req = Net::HTTP::Post.new uri, build_headers(body)
+      req = Net::HTTP::Post.new uri, build_headers(url, body)
       req.body = body
 
       log "Request [#{uri}]: #{body}"
@@ -49,12 +56,12 @@ module Walletone::Recurrent
       Net::HTTP.start uri.host, uri.port, use_ssl: true, verify_mode: OpenSSL::SSL::VERIFY_NONE # OpenSSL::SSL::VERIFY_PEER
     end
 
-    def build_headers(body)
+    def build_headers(url, body)
       {
         'Content-Type'       => 'application/json; charset=utf-8',
         'X-Wallet-UserId'    => merchant_id,
         'X-Wallet-Timestamp' => timestamp,
-        'X-Wallet-Signature' => signature(body)
+        'X-Wallet-Signature' => signature(url, body)
       }
     end
 
@@ -62,8 +69,8 @@ module Walletone::Recurrent
       Walletone.logger.info "Recurrent::Client: #{message}"
     end
 
-    def signature body
-      Walletone::Signer.sign [merchant_id, customer_id, timestamp, body, secret_key].join, hash_type
+    def signature url, body
+      Walletone::Signer.sign [url, merchant_id, timestamp, body, secret_key].join, hash_type
     end
   end
 end

@@ -10,10 +10,12 @@ describe Walletone::Invoicing::Client do
 
   subject { Walletone::Invoicing::Client.new user_id: user_id, secret_key: secret_key }
 
+  let(:invoice) { Walletone::Recurrent::Invoice.new Amount: amount, OrderId: order_id }
+
   context '#make_invoice' do
     it do
       stub_request(:post, Walletone::Invoicing::Client::BASE_URL + 'invoices').to_return(body: success_response)
-      expect(subject.make_invoice(amount: amount, order_id: order_id)).to be_a(Hash)
+      expect(subject.make_invoice(invoice)).to be_a(Hash)
     end
   end
 end

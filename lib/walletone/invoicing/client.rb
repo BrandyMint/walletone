@@ -21,7 +21,7 @@ module Walletone::Invoicing
 
     def do_phone_payment(amount:, order_id:, phone: ,additional_params:)
       invoice = make_invoice amount: amount, order_id: order_id, additional_params: additional_params
-      result = make_payments_process_with_phone payment_id: invoice['Invoice']['Payment']['PaymentId'], phone: phone
+      make_payments_process_with_phone payment_id: invoice['Invoice']['Payment']['PaymentId'], phone: phone
     end
 
     # Для рекурентов

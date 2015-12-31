@@ -16,17 +16,48 @@ describe Walletone::Recurrent::Client do
   let(:invoice) { Walletone::Recurrent::Invoice.new Amount: 123, OrderId: 456 }
 
   context '#create_invoice' do
+    let(:result) {
+      {"Invoice"=>
+       {"InvoiceId"=>345539868062,
+        "Amount"=>1.24,
+        "CurrencyId"=>643,
+        "InvoiceStateId"=>"Created",
+        "CreateDate"=>"2015-12-31T08:20:13",
+        "UpdateDate"=>"2015-12-31T08:20:13",
+        "Payment"=>
+       {"PaymentId"=>69904496,
+        "PaymentCode"=>"345539868062",
+        "PaymentCodeType"=>"InvoiceId",
+        "CreateDate"=>"2015-12-31T08:20:14.137",
+        "UpdateDate"=>"2015-12-31T08:20:14.137",
+        "PaymentStateId"=>"Created",
+        "PaymentTypeId"=>"CreditCardRUB"}},
+        "CanSaveAsExternalAccount"=>true}
+    }
+    before do
+      stub_request(:post, "https://wl.walletone.com/checkout/invoicingapi/invoices").
+        with(:body => "{\"OrderId\":456,\"Amount\":123,\"CurrencyId\":643,\"PaymentTypeId\":\"CreditCardRUB\",\"InvoiceAdditionalParams\":{}}").
+        to_return(:status => 200, :body => result.to_json, :headers => {'Content-Type'=>'application/json; charset=utf-8'})
+    end
     it do
       res = client.create_invoice invoice
-      expect(res).to eq 'aaa'
+      expect(res).to be_a Walletone::Recurrent::ResultInvoice
     end
   end
 
   context '#make_payment' do
     let(:payment_id) { 123 }
-    it do
-      res = client.make_payment payment_id
-      expect(res).to eq 'aaa'
+    let(:result) { {} }
+    before do
+      stub_request(:post, "https://wl.walletone.com/checkout/invoicingapi/payments/123/process").
+        with(:body => "{\"CustomerId\":\"123\",\"CreditCardTerminal\":\"Non3Ds\",\"UseSavedAuthData\":\"true\",\"AuthData\":{\"RecurrentCreditCardEmail\":\"some@email.ru\"}}").
+        to_return(:status => 200, :body => result.to_json, :headers => {'Content-Type'=>'application/json; charset=utf-8'})
+
     end
+    pending 'ответ'
+    #it do
+      #res = client.make_payment payment_id: payment_id, email: 'some@email.ru'
+      #expect(res).to eq 'aaa'
+    #end
   end
 end
