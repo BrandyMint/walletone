@@ -5,6 +5,7 @@ require 'pry'
 require "codeclimate-test-reporter"
 require 'webmock/rspec'
 
+WebMock.disable_net_connect!(:allow => "codeclimate.com")
 CodeClimate::TestReporter.start
 
 Dir["./spec/support/**/*.rb"].sort.each { |f| require f}
