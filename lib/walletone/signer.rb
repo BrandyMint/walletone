@@ -13,6 +13,7 @@ module Walletone
     attribute :fields,     Walletone::Fields, requried: true
 
     def self.sign(content, hash_type)
+      Walletone.logger.info "Walletone sign #{hash_type} content: \"#{content}\""
       case hash_type
       when :md5
         Digest::MD5.base64digest content
