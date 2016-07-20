@@ -20,7 +20,7 @@ Coverage](https://codeclimate.com/github/BrandyMint/walletone/badges/coverage.sv
 
 Сначала определимся как мы будем получать уведомление об оплате.
 
-#### Вариант N1. Через callback
+#### Вариант N1. Через callback и Rack
 
 ```ruby
 wm = Walletone::Middleware::Callback.new do |notify, env|
@@ -38,10 +38,16 @@ wm = Walletone::Middleware::Callback.new do |notify, env|
 end
 ```
 
+Для Rack в `config.ru` добавляем:
+
+```ruby
+run wm
+```
+
 #### Вариант N2. Создаем свой класс middleware
 
 ```ruby
-class MyApp::WalletoneMiddleware < Waletone::Middleware::Base
+class WalletoneMiddleware < Waletone::Middleware::Base
   def perform notify, env
     raise 'Wrong sign' unless notify.valid? W1_SECRET_KEY
 
@@ -49,21 +55,18 @@ class MyApp::WalletoneMiddleware < Waletone::Middleware::Base
     'Return some message for OK response'
   end
 end
-
-wm = MyApp::WalletoneMiddleware.new
 ```
 
-### 2. Подключаем middleware
+Для RubyOnRails в `/config/routes.rb` добавляем:
 
 ```ruby
-# config.ru
-run wm
-
-# rails
-mount wm => '/w1_callback'
+Rails.application.routes.draw do
+  mount WalletoneMiddleware.new => '/w1_callback'
+  ..
+end
 ```
 
-### 3. Прописываем в настройках мерчанта на walletone.com получившийся url
+### 2. Прописываем в настройках мерчанта на walletone.com получившийся url
 
 Готово. Принимаем уведомления.
 
