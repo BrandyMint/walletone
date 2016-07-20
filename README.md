@@ -9,8 +9,7 @@ Coverage](https://codeclimate.com/github/BrandyMint/walletone/badges/coverage.sv
 
 Привет!
 
-Мы сделали этот модуль очень удобным для Вас. Вы сделаете нам приятно и полезно,
-если зарегистрируете своего мерчанта по [этой промо-ссылке](http://www.walletone.com/ru/merchant/?promo=EtRa48zZP)
+Мы сделали этот модуль очень удобным для Вас. Вы сделаете наWahttp://www.walletone.com/ru/merchant/?promo=EtRa48zZP)
 
 Так вы получите сниженный процент за прием платежей по картам visa/mastercard - 3,5%
 
@@ -47,7 +46,7 @@ run wm
 #### Вариант N2. Создаем свой класс middleware
 
 ```ruby
-class WalletoneMiddleware < Waletone::Middleware::Base
+class WalletoneMiddleware < Walletone::Middleware::Base
   def perform notify, env
     raise 'Wrong sign' unless notify.valid? W1_SECRET_KEY
 
