@@ -79,21 +79,28 @@ end
 Для полей требующих множественное значение (типа `WMI_PTENABLED`) в качестве
 значений можно передавать массив строк.
 
+В контроллере имеем:
+
 ```ruby
-payment = Walletone::Payment.new(
+WALLETONE_SECRET_KEY='Ваш секретный ключ от Walletone'
+
+def create
+  payment = Walletone::Payment.new(
     WMI_MERCHANT_ID:    'Номер вашего merchant ID',
     WMI_PAYMENT_AMOUNT:  10000, # Сумма
     WMI_CURRENCY_ID:     643, # ISO номер валюты (По умолчанию 643 - Рубль),
-    WMI_PTENABLED:      ['WebMoneyRUB', 'WebMoneyUSD'],
+    WMI_PTENABLED:      ['WebMoneyRUB', 'WebMoneyUSD'], # Указывать не обязательно
     SOME_CUSTOM_FIELD:  'value'
     # etc любые другие поля
-)
-payment.sign! 'you secret key'
-form = payment.form
+  )
+  payment.sign! WALLETONE_SECRET_KEY
+  
+  render locals: { form: payment.form }
+end
 ```
 
 
-### Собственно генераця формы
+### Собственно генераця формы во вьюхе
 
 ```haml
 
@@ -104,10 +111,13 @@ form = payment.form
     :class=>'btn btn-primary',
     :data =>{:disable_with => 'Переправляю на сайт оплаты..'}
 
-:coffee
-  # Автоматически сабмитим форму, чтобы не тревожить лишний раз
-  # пользователя
-  $ -> $('[data-autosubmit]').submit()
+
+-  # Автоматически сабмитим форму, чтобы не тревожить лишний раз
+-  # пользователя
+javascript:
+  document.addEventListener("DOMContentLoaded", function() {
+     document.querySelector("[data-autosubmit]").submit();
+  });
 ```
 
 # Подсказки
