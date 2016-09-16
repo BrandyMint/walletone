@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir.glob('spec/**/*')
 
   s.add_dependency 'virtus', '~> 1.0'
-  s.add_dependency 'rack',   '~> 1.5'
+  s.add_dependency 'rack',   '>= 1.5', '< 3'
 
   s.add_runtime_dependency 'faraday'
   s.add_runtime_dependency 'money'
