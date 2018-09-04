@@ -4,8 +4,6 @@ require 'ffaker'
 require 'pry'
 require 'webmock/rspec'
 
-CodeClimate::TestReporter.start
-
 Dir['./spec/support/**/*.rb'].sort.each { |f| require f }
 
 RSpec.configure do |config|
